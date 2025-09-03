@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Story - Agentic AI</title>
+    <meta name="description" content="Learn about our origin story and first major contract that set the foundation for Agentic AI.">
+
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+    <!-- Google Fonts - Manrope -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link href="./src/css/styles.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./public/favicon.ico">
+</head>
+<body>
+        <!-- Navigation -->
+    <header class="navbar">
+        <nav class="nav-container">
+            <div class="nav-content">
+                <!-- Logo -->
+                <a href="index.html" class="logo-link">
+                    <div class="logo-icon">
+                        <span class="logo-text">A</span>
+                    </div>
+                    <span class="logo-company">Agentic AI</span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="features.html" class="nav-link">Features</a>
+                    <a href="benefits.html" class="nav-link">Benefits</a>
+                    <a href="story.html" class="nav-link active">Story</a>
+                    <a href="vision.html" class="nav-link">Vision</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                    <a href="demo.html" class="btn-demo">Request Demo</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-button" aria-label="Toggle mobile menu">
+                    <i data-lucide="menu" class="mobile-menu-icon"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav">
+            <div class="mobile-nav-content">
+                <a href="index.html" class="mobile-nav-link">Home</a>
+                <a href="features.html" class="mobile-nav-link">Features</a>
+                <a href="benefits.html" class="mobile-nav-link">Benefits</a>
+                <a href="story.html" class="mobile-nav-link active">Story</a>
+                <a href="vision.html" class="mobile-nav-link">Vision</a>
+                <a href="contact.html" class="mobile-nav-link">Contact</a>
+                <a href="demo.html" class="btn-demo">Request Demo</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-container">
+                <h1 class="hero-title">Our Story</h1>
+                <p class="hero-subtitle">How our first real-world project laid the foundation for Agentic AI.</p>
+            </div>
+        </section>
+
+        <!-- Story Content Section -->
+        <section class="section-padding">
+            <div class="container-custom">
+                <div class="grid lg:grid-cols-12 gap-10">
+                    <div class="lg:col-span-8 space-y-8">
+                        <div class="card p-8">
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-gradient-to-r from-secondary to-accent rounded-xl flex items-center justify-center shrink-0">
+                                    <i data-lucide="book-open" class="w-6 h-6 text-white"></i>
+                                </div>
+                                <div>
+                                    <h2 class="text-2xl font-heading font-bold text-white mb-3">Our Beginning</h2>
+                                    <p class="text-white/80 leading-relaxed">
+                                        Our founding team’s journey began with a project for <strong>One Delta LLC, Atlanta, Georgia</strong> (a paid client) over the summer of 2025.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card p-8">
+                            <h3 class="text-xl font-heading font-semibold text-white mb-4 text-center">The Challenge</h3>
+                            <p class="text-white/80 leading-relaxed mb-4">
+                                One Delta LLC planned to launch a business exporting Indian vegetables via cold storage to the U.S. market—bringing the authentic taste of home to Indians living abroad. Exporting from Mexico had higher tariffs, so they decided to source from India.
+                            </p>
+                            <p class="text-white/80 leading-relaxed text-center max-w-3xl mx-auto">
+                                As a starting point for this project, the company’s President wanted a <strong>software solution</strong> that could:
+                            </p>
+                            <ul class="list-disc list-inside text-white/90 mt-4 space-y-2">
+                                <li>Compute <strong>52-vegetable DMA, 30-day DMA, 90-day DMA, and median prices</strong> (from Jan 1, 2022 to present)</li>
+                                <li>Pull real-time data from the <strong>Chennai vegetable market (Web Scraped)</strong></li>
+                                <li>Plot this data on a graph</li>
+                                <li>Make meaningful projections for market research using data analytical algorithms.</li>
+                                <li>Track <strong>weather conditions</strong> to aid in planning</li>
+                            </ul>
+                        </div>
+
+                        <div class="card p-8">
+                            <h3 class="text-xl font-heading font-semibold text-white mb-4 text-center">Our Solution</h3>
+                            <p class="text-white/80 leading-relaxed text-center max-w-3xl mx-auto">
+                                We developed this solution, and that marked our first major contract.
+                            </p>
+                        </div>
+
+                        <div class="card p-8">
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-gradient-to-r from-accent to-secondary rounded-xl flex items-center justify-center shrink-0">
+                                    <i data-lucide="server" class="w-6 h-6 text-white"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-heading font-semibold text-white mb-3">Deployment & Current Status</h3>
+                                    <p class="text-white/80 leading-relaxed text-center max-w-3xl mx-auto">
+                                        This project was given into 4 Phases and the project is now active and running from a VPS (deployed by the founding team) at <strong>bazy.in</strong>.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sidebar / Highlights -->
+                    <div class="lg:col-span-4 space-y-8">
+                        <div class="p-6 rounded-2xl bg-white/5 border border-white/10">
+                            <h4 class="font-heading font-semibold text-white mb-3">Project Snapshot</h4>
+                            <ul class="space-y-2 text-white/80">
+                                <li class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-secondary"></i><span>Client: One Delta LLC</span></li>
+                                <li class="flex items-center gap-2"><i data-lucide="building" class="w-4 h-4 text-secondary"></i><span>Location: Atlanta, Georgia</span></li>
+                                <li class="flex items-center gap-2"><i data-lucide="calendar" class="w-4 h-4 text-secondary"></i><span>Timeline: Summer 2025</span></li>
+                                <li class="flex items-center gap-2"><i data-lucide="cpu" class="w-4 h-4 text-secondary"></i><span>Focus: Data, Analytics, Automation</span></li>
+                                <li class="flex items-center gap-2"><i data-lucide="globe" class="w-4 h-4 text-secondary"></i><span>Deployment: VPS at bazy.in</span></li>
+                            </ul>
+                        </div>
+
+                        <div class="p-6 rounded-2xl bg-gradient-to-br from-secondary/20 to-accent/20 border border-white/10">
+                            <h4 class="font-heading font-semibold text-white mb-2">Impact</h4>
+                            <p class="text-white/80">
+                                A production-grade analytics and forecasting tool powering real-time sourcing and market research decisions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section section-padding">
+            <div class="container-custom text-center">
+                <h2 class="text-3xl lg:text-4xl font-heading font-bold text-white mb-6">Want to learn more?</h2>
+                <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">We build data-driven, scalable AI solutions tailored to your business.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="demo.html" class="btn-primary">Request Free Demo</a>
+                    <a href="contact.html" class="btn-secondary border-white text-white hover:bg-white hover:text-primary">Talk to Sales</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <!-- Company -->
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <span class="logo-text">A</span>
+                        </div>
+                        <span class="logo-company">Agentic AI</span>
+                    </div>
+                    <p class="footer-description">
+                        B2B AI SaaS helping hotels leverage AI to scale higher. Reduce costs, boost revenue, and automate operations 24/7.
+                    </p>
+                </div>
+
+                <!-- Product Links -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Product</h3>
+                    <ul class="footer-links">
+                        <li><a href="features.html" class="footer-link">Features</a></li>
+                        <li><a href="benefits.html" class="footer-link">Benefits</a></li>
+                        <li><a href="demo.html" class="footer-link">Request Demo</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company Links -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="story.html" class="footer-link">Our Story</a></li>
+                        <li><a href="vision.html" class="footer-link">Vision</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support Links -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+                        <li><a href="#" class="footer-link">Help Center</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2024 Agentic AI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./src/js/main.js"></script>
+    <script>
+        if (typeof lucide !== 'undefined') {
+            lucide.createIcons();
+        }
+    </script>
+</body>
+</html>
+
