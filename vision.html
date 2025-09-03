@@ -1,226 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Vision - Agentic AI</title>
-  <meta name="description" content="Discover our vision for building India's AI infrastructure and transforming businesses through digital innovation.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Vision - Nexrova</title>
+  <meta name="description" content="Explore the vision behind Nexrova: building an intelligent operating system for modern hospitality that empowers hotels to achieve peak efficiency and profitability with AI." />
 
-  <!-- Preconnect -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
 
-      <!-- Google Fonts - Manrope -->
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-  <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 
-  <!-- GSAP -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: "#D6B370",
+          },
+        },
+      },
+    };
+  </script>
 
-  <!-- Custom CSS -->
-  <link href="./src/css/styles.css" rel="stylesheet">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="./public/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="./public/favicon.ico" />
 </head>
-<body>
+<body class="bg-gray-950 text-white font-sans">
 
-  <!-- Navigation -->
-  <header class="navbar">
-    <nav class="nav-container">
-      <div class="nav-content">
-        <!-- Logo -->
-        <a href="index.html" class="logo-link">
-          <div class="logo-icon">
-            <span class="logo-text">A</span>
-          </div>
-          <span class="logo-company">Agentic AI</span>
-        </a>
+  <header class="fixed top-0 left-0 w-full bg-gray-900/70 backdrop-blur-md z-50">
+    <nav class="max-w-7xl mx-auto px-6 flex justify-between items-center py-4">
+      
+      <a href="index.html" class="flex items-center gap-2">
+        <img src="./src/assets/logo.png" alt="Agentic AI Logo" class="w-10 h-10 object-contain" />
+        <span class="text-white font-bold text-lg">Nexrova</span>
+      </a>
 
-        <!-- Desktop Navigation -->
-        <div class="nav-links">
-          <a href="index.html" class="nav-link">Home</a>
-          <a href="features.html" class="nav-link">Features</a>
-          <a href="benefits.html" class="nav-link">Benefits</a>
-          <a href="story.html" class="nav-link">Story</a>
-          <a href="vision.html" class="nav-link active">Vision</a>
-          <a href="contact.html" class="nav-link">Contact</a>
-          <a href="demo.html" class="btn-demo">Request Demo</a>
-        </div>
-
-        <!-- Mobile Menu Button -->
-        <button class="mobile-menu-button" aria-label="Toggle mobile menu">
-          <i data-lucide="menu" class="mobile-menu-icon"></i>
-        </button>
+      <div class="hidden md:flex gap-6 items-center">
+        <a href="index.html" class="hover:text-brand">Home</a>
+        <a href="features.html" class="hover:text-brand">Features</a>
+        <a href="benefits.html" class="hover:text-brand">Benefits</a>
+        <a href="story.html" class="hover:text-brand">Story</a>
+        <a href="vision.html" class="hover:text-brand">Vision</a>
+        <a href="contact.html" class="hover:text-brand">Contact</a>
+        <a href="demo.html" class="bg-brand text-white px-4 py-2 rounded-xl font-semibold shadow-md hover:shadow-lg">Request Demo</a>
       </div>
+
+      <button id="menuBtn" class="md:hidden text-white" aria-label="Toggle mobile menu">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
     </nav>
 
-    <!-- Mobile Navigation -->
-    <div class="mobile-nav">
-      <div class="mobile-nav-content">
-        <a href="index.html" class="mobile-nav-link">Home</a>
-        <a href="features.html" class="mobile-nav-link">Features</a>
-        <a href="benefits.html" class="mobile-nav-link">Benefits</a>
-        <a href="story.html" class="mobile-nav-link">Story</a>
-        <a href="vision.html" class="mobile-nav-link active">Vision</a>
-        <a href="contact.html" class="mobile-nav-link">Contact</a>
-        <a href="demo.html" class="btn-demo">Request Demo</a>
+    <div id="mobileMenu" class="fixed top-0 right-0 h-full w-64 bg-gray-900 transform translate-x-full transition-transform duration-300 md:hidden z-40">
+      <div class="flex flex-col items-start p-6 gap-4">
+        <button id="closeMenu" class="self-end text-white mb-4">
+          <i data-lucide="x" class="w-6 h-6"></i>
+        </button>
+        <a href="index.html" class="hover:text-brand">Home</a>
+        <a href="features.html" class="hover:text-brand">Features</a>
+        <a href="benefits.html" class="hover:text-brand">Benefits</a>
+        <a href="story.html" class="hover:text-brand">Story</a>
+        <a href="vision.html" class="hover:text-brand">Vision</a>
+        <a href="contact.html" class="hover:text-brand">Contact</a>
+        <a href="demo.html" class="bg-brand text-white px-4 py-2 rounded-xl w-full text-center font-semibold">Request Demo</a>
       </div>
     </div>
   </header>
 
-  <main>
-    <!-- Hero -->
-    <section class="hero">
-      <div class="hero-container">
-        <h1 class="hero-title">Our Vision</h1>
-        <p class="hero-subtitle">Building India's AI infrastructure to transform businesses through digital innovation.</p>
-      </div>
+  <main class="pt-32">
+    <section class="max-w-7xl mx-auto px-6 text-center">
+      <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
+        Our Vision: The Intelligent Operating System for <span class="text-brand">Modern Hospitality</span>
+      </h1>
+      <p class="mt-6 text-lg text-gray-300 max-w-3xl mx-auto">
+        We envision a future where every hotel operates with peak efficiency, staff are empowered by technology, and every guest experience is seamlessly exceptional. This isn't about adding another tool; it's about building the future of hospitality.
+      </p>
     </section>
 
-    <!-- Vision Content -->
-    <section class="section-padding">
-      <div class="container-custom">
-        <div class="max-w-4xl mx-auto space-y-12 text-center">
-
-          <!-- Main Vision -->
-          <div class="card p-8 space-y-4">
-            <div class="w-12 h-12 bg-gradient-to-r from-secondary to-accent rounded-xl flex items-center justify-center mx-auto">
-              <i data-lucide="lightbulb" class="w-6 h-6 text-white"></i>
-            </div>
-            <h2 class="text-2xl font-heading font-bold text-white">Expanding Our Vision</h2>
-            <p class="text-white/80 leading-relaxed max-w-3xl mx-auto">
-              While working on that project, we realized that many <strong>MSMEs, SMEs, startups, and other businesses</strong> in India <strong>lacked proper technological infrastructure and were not leveraging AI</strong>.
-            </p>
-          </div>
-
-          <!-- Opportunity -->
-          <div class="card p-8 space-y-4">
-            <h3 class="text-xl font-heading font-semibold text-white">The Opportunity</h3>
-            <p class="text-white/80 leading-relaxed max-w-3xl mx-auto">
-              We saw an opportunity—<strong>why not build India's AI infrastructure</strong> for existing businesses and help them go digital?
-            </p>
-          </div>
-
-          <!-- Hospitality -->
-          <div class="card p-8 space-y-4">
-            <h3 class="text-xl font-heading font-semibold text-white">Starting with Hospitality</h3>
-            <p class="text-white/80 leading-relaxed max-w-3xl mx-auto">We began with the <strong>hospitality industry</strong>, where we:</p>
-            <ul class="list-disc list-inside text-white/90 space-y-2 text-left max-w-2xl mx-auto">
-              <li>Collaborated with PMS providers like <strong>Ezee</strong> <em>(a global PMS solution)</em></li>
-              <li>Conducted detailed <strong>market research</strong></li>
-              <li>Identified <strong>critical technology gaps</strong> in the sector</li>
-            </ul>
-          </div>
-
-          <!-- Challenges -->
-          <div class="card p-8 space-y-4">
-            <h3 class="text-xl font-heading font-semibold text-white">Challenges Faced</h3>
-            <p class="text-white/80 max-w-3xl mx-auto">However, due to challenges such as:</p>
-            <ul class="list-disc list-inside text-white/90 space-y-2 text-left max-w-2xl mx-auto">
-              <li>Limited funding</li>
-              <li>Poor partner experiences</li>
-              <li>Lack of a developing team</li>
-            </ul>
-            <p class="text-white/80 mt-4 max-w-3xl mx-auto">…we couldn't continue the project at full scale.</p>
-          </div>
-
-          <!-- Success Stories -->
-          <div class="card p-8 space-y-6">
-            <h3 class="text-xl font-heading font-semibold text-white">Success Stories</h3>
-            <p class="text-white/80 max-w-3xl mx-auto">Still, we approached two business owners and worked with:</p>
-            <div class="grid md:grid-cols-2 gap-6">
-              <div class="p-4 bg-white/5 rounded-lg border border-white/10">
-                <h4 class="font-heading font-semibold text-white mb-2">Kolam Serviced Apartments, Adyar</h4>
-                <a href="https://kolamapartments.com/" target="_blank" rel="noopener noreferrer" class="text-secondary hover:text-accent transition-colors">kolamapartments.com</a>
-              </div>
-              <div class="p-4 bg-white/5 rounded-lg border border-white/10">
-                <h4 class="font-heading font-semibold text-white mb-2">Chennai BNB</h4>
-                <a href="https://chennaibnb.com/" target="_blank" rel="noopener noreferrer" class="text-secondary hover:text-accent transition-colors">chennaibnb.com</a>
-              </div>
-            </div>
-            <p class="text-white/80 max-w-3xl mx-auto">These projects gave us valuable insight into how digital infrastructure can transform hospitality businesses in India and set the stage for our next venture.</p>
-          </div>
-
+    <section class="max-w-7xl mx-auto px-6 mt-20">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold">The Constant Juggle of Hotel Management</h2>
+        <p class="mt-4 text-gray-400 max-w-2xl mx-auto">Running a hotel today is a relentless balancing act between rising costs and guest expectations. The old way of managing operations is no longer sustainable.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-gray-900 p-8 rounded-2xl border border-brand/20">
+          <i data-lucide="line-chart" class="w-10 h-10 text-brand mb-4"></i>
+          <h3 class="text-xl font-bold mb-2">Rising Costs</h3>
+          <p class="text-gray-300">Owners and managers are caught between rising operational costs and the pressure to deliver more.</p>
+        </div>
+        <div class="bg-gray-900 p-8 rounded-2xl border border-brand/20">
+          <i data-lucide="users" class="w-10 h-10 text-brand mb-4"></i>
+          <h3 class="text-xl font-bold mb-2">Overworked Staff</h3>
+          <p class="text-gray-300">Staff are stretched thin, handling repetitive tasks instead of focusing on high-value guest service.</p>
+        </div>
+        <div class="bg-gray-900 p-8 rounded-2xl border border-brand/20">
+          <i data-lucide="x-circle" class="w-10 h-10 text-brand mb-4"></i>
+          <h3 class="text-xl font-bold mb-2">Missed Opportunities</h3>
+          <p class="text-gray-300">The constant pressure leads to burnout, costly errors, and missed opportunities for revenue.</p>
         </div>
       </div>
     </section>
 
-    <!-- CTA -->
-    <section class="cta-section section-padding text-center">
-      <div class="container-custom">
-        <h2 class="text-3xl lg:text-4xl font-heading font-bold text-white mb-6">Ready to Transform Your Business?</h2>
-        <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">Join us in building the future of AI-powered business solutions.</p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="demo.html" class="btn-primary">Request Free Demo</a>
-          <a href="contact.html" class="btn-secondary">Talk to Sales</a>
+    <section class="max-w-7xl mx-auto px-6 mt-24 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold">An Autonomous, Empowered Future</h2>
+      <p class="mt-4 text-lg text-gray-300 max-w-3xl mx-auto">
+        Our vision is to build the intelligent operating system for Indian hospitality—a future where management is autonomous, staff are empowered, and profitability is effortless.
+      </p>
+      <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div class="flex justify-center">
+          <div class="w-full h-80 md:h-96 bg-gray-900 rounded-xl flex items-center justify-center p-4">
+            <p class="text-gray-500 text-lg text-center">Illustration of AI-powered hotel ecosystem</p>
+          </div>
         </div>
+        
+        <div class="text-left">
+          <p class="text-lg text-gray-300">
+            We see a world where the hotel's day-to-day operations run on an invisible, intelligent engine. An AI that anticipates guest needs, orchestrates staff duties, and optimizes revenue in the background.
+          </p>
+          <p class="mt-4 text-lg text-gray-300">
+            By automating the mundane, we free hotel staff from transactional tasks and empower them to become true hosts. They are no longer bottlenecks; they are supervisors of an efficient system, with more time to focus on what humans do best: providing genuine, memorable hospitality that turns guests into lifelong advocates.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 mt-24">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold">The Principles That Guide Our Vision</h2>
+        <p class="mt-4 text-gray-400 max-w-2xl mx-auto">To bring this future to life, we are guided by four core principles that shape every feature we build.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div class="flex flex-col md:flex-row items-start gap-6 p-6 bg-gray-900 rounded-xl border border-brand/20">
+          <i data-lucide="sparkles" class="text-brand w-12 h-12 flex-shrink-0"></i>
+          <div>
+            <h3 class="text-2xl font-bold mb-2">Democratize AI Technology</h3>
+            <p class="text-gray-300">Powerful AI shouldn't be a luxury for large chains. By building on accessible platforms and offering an affordable SaaS model, we level the playing field for small and mid-sized hotels.</p>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row items-start gap-6 p-6 bg-gray-900 rounded-xl border border-brand/20">
+          <i data-lucide="plug" class="text-brand w-12 h-12 flex-shrink-0"></i>
+          <div>
+            <h3 class="text-2xl font-bold mb-2">Enhance, Don't Replace</h3>
+            <p class="text-gray-300">We are not another PMS. Our vision is to be the essential AI layer that integrates seamlessly with your existing systems, unlocking their full potential without disruption.</p>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row items-start gap-6 p-6 bg-gray-900 rounded-xl border border-brand/20">
+          <i data-lucide="hand" class="text-brand w-12 h-12 flex-shrink-0"></i>
+          <div>
+            <h3 class="text-2xl font-bold mb-2">Human-Centric Automation</h3>
+            <p class="text-gray-300">Every automation we create is designed to free up your team's time. We turn staff into supervisors of an intelligent system, allowing them to focus on high-value guest interactions.</p>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row items-start gap-6 p-6 bg-gray-900 rounded-xl border border-brand/20">
+          <i data-lucide="trending-up" class="text-brand w-12 h-12 flex-shrink-0"></i>
+          <div>
+            <h3 class="text-2xl font-bold mb-2">Drive Tangible Results</h3>
+            <p class="text-gray-300">A vision is meaningless without real-world results. Nexrova is built to deliver a clear and immediate return on investment, from saving costs to generating new revenue.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 mt-24 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold leading-tight">
+        Building What's Next
+      </h2>
+      <p class="mt-4 text-lg text-gray-300 max-w-3xl mx-auto">
+        Our journey is just beginning. As the Nexrova OS evolves, we will push the boundaries of what's possible, delving deeper into predictive analytics, hyper-personalization, and building a fully connected hotel ecosystem.
+      </p>
+      <div class="mt-8 flex justify-center">
+        <a href="demo.html" class="bg-brand text-black font-semibold px-6 py-3 rounded-xl shadow-md hover:shadow-lg transition">Request a Demo</a>
       </div>
     </section>
   </main>
 
-     <!-- Footer -->
-   <footer class="footer">
-     <div class="footer-container">
-       <div class="footer-grid">
-         <!-- Company -->
-         <div class="footer-section">
-           <div class="footer-logo">
-             <div class="logo-icon">
-               <span class="logo-text">A</span>
-             </div>
-             <span class="logo-company">Agentic AI</span>
-           </div>
-           <p class="footer-description">
-             B2B AI SaaS helping hotels leverage AI to scale higher. Reduce costs, boost revenue, and automate operations 24/7.
-           </p>
-         </div>
+  <footer class="bg-gray-900 mt-24 py-12">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 text-gray-400">
+      <div>
+        <div class="flex items-center gap-2 mb-4">
+         <img src="./src/assets/logo.png" alt="Nexrova Logo" class="w-10 h-10 object-contain" />
+          <span class="text-white font-bold">Nexrova</span>
+        </div>
+        <p>B2B AI SaaS helping hotels leverage AI to scale higher. Reduce costs, boost revenue, and automate operations 24/7.</p>
+      </div>
 
-         <!-- Product Links -->
-         <div class="footer-section">
-           <h3 class="footer-title">Product</h3>
-           <ul class="footer-links">
-             <li><a href="features.html" class="footer-link">Features</a></li>
-             <li><a href="benefits.html" class="footer-link">Benefits</a></li>
-             <li><a href="demo.html" class="footer-link">Request Demo</a></li>
-           </ul>
-         </div>
+      <div>
+        <h3 class="text-white font-semibold mb-3">Product</h3>
+        <ul class="space-y-2">
+          <li><a href="features.html" class="hover:text-brand">Features</a></li>
+          <li><a href="benefits.html" class="hover:text-brand">Benefits</a></li>
+          <li><a href="demo.html" class="hover:text-brand">Request Demo</a></li>
+        </ul>
+      </div>
 
-         <!-- Company Links -->
-         <div class="footer-section">
-           <h3 class="footer-title">Company</h3>
-           <ul class="footer-links">
-             <li><a href="story.html" class="footer-link">Our Story</a></li>
-             <li><a href="vision.html" class="footer-link">Vision</a></li>
-           </ul>
-         </div>
+      <div>
+        <h3 class="text-white font-semibold mb-3">Company</h3>
+        <ul class="space-y-2">
+          <li><a href="story.html" class="hover:text-brand">Our Story</a></li>
+          <li><a href="vision.html" class="hover:text-brand">Vision</a></li>
+        </ul>
+      </div>
 
-         <!-- Support Links -->
-         <div class="footer-section">
-           <h3 class="footer-title">Support</h3>
-           <ul class="footer-links">
-             <li><a href="contact.html" class="footer-link">Contact Us</a></li>
-             <li><a href="#" class="footer-link">Help Center</a></li>
-           </ul>
-         </div>
-       </div>
+      <div>
+        <h3 class="text-white font-semibold mb-3">Support</h3>
+        <ul class="space-y-2">
+          <li><a href="contact.html" class="hover:text-brand">Contact Us</a></li>
+          <li><a href="#" class="hover:text-brand">Help Center</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-8 text-center text-gray-500 text-sm">
+      © 2025 Nexrova. All rights reserved.
+    </div>
+  </footer>
 
-       <div class="footer-bottom">
-         <p class="footer-copyright">© 2024 Agentic AI. All rights reserved.</p>
-       </div>
-     </div>
-   </footer>
-
-  <!-- Scripts -->
-  <script src="./src/js/main.js"></script>
   <script>
     if (typeof lucide !== 'undefined') {
       lucide.createIcons();
     }
+
+    const menuBtn = document.getElementById('menuBtn');
+    const closeMenu = document.getElementById('closeMenu');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.remove('translate-x-full');
+      mobileMenu.classList.add('translate-x-0');
+    });
+
+    closeMenu.addEventListener('click', () => {
+      mobileMenu.classList.add('translate-x-full');
+      mobileMenu.classList.remove('translate-x-0');
+    });
   </script>
 </body>
 </html>
