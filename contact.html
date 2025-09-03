@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - Nexrova</title>
+  <meta name="description" content="Contact Nexrova to learn more about our AI-powered hospitality solutions, request a demo, or ask any questions you have." />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: "#D6B370",
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./public/favicon.ico" />
+</head>
+<body class="bg-gray-950 text-white font-sans">
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 w-full bg-gray-900/70 backdrop-blur-md z-50">
+    <nav class="max-w-7xl mx-auto px-6 flex justify-between items-center py-4">
+      
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center gap-2">
+        <img src="./src/assets/logo.png" alt="Agentic AI Logo" class="w-10 h-10 object-contain" />
+        <span class="text-white font-bold text-lg">Nexrova</span>
+      </a>
+
+      <!-- Desktop Links -->
+      <div class="hidden md:flex gap-6 items-center">
+        <a href="index.html" class="hover:text-brand">Home</a>
+        <a href="features.html" class="hover:text-brand">Features</a>
+        <a href="benefits.html" class="hover:text-brand">Benefits</a>
+        <a href="story.html" class="hover:text-brand">Story</a>
+        <a href="vision.html" class="hover:text-brand">Vision</a>
+        <a href="contact.html" class="bg-brand text-black px-4 py-2 rounded-xl font-semibold shadow-md hover:shadow-lg">Contact</a>
+        <a href="demo.html" class="bg-brand text-white px-4 py-2 rounded-xl font-semibold shadow-md hover:shadow-lg">Request Demo</a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="menuBtn" class="md:hidden text-white" aria-label="Toggle mobile menu">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="fixed top-0 right-0 h-full w-64 bg-gray-900 transform translate-x-full transition-transform duration-300 md:hidden z-40">
+      <div class="flex flex-col items-start p-6 gap-4">
+        <button id="closeMenu" class="self-end text-white mb-4">
+          <i data-lucide="x" class="w-6 h-6"></i>
+        </button>
+        <a href="index.html" class="hover:text-brand">Home</a>
+        <a href="features.html" class="hover:text-brand">Features</a>
+        <a href="benefits.html" class="hover:text-brand">Benefits</a>
+        <a href="story.html" class="hover:text-brand">Story</a>
+        <a href="vision.html" class="hover:text-brand">Vision</a>
+        <a href="contact.html" class="hover:text-brand">Contact</a>
+        <a href="demo.html" class="bg-brand text-white px-4 py-2 rounded-xl w-full text-center font-semibold">Request Demo</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-32">
+    <!-- Contact Form Section -->
+    <section class="max-w-7xl mx-auto px-6 text-center">
+      <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
+        Let's <span class="text-brand">Build a Smarter Hotel</span> Together
+      </h1>
+      <p class="mt-6 text-lg text-gray-300 max-w-3xl mx-auto">
+        Have questions about Nexrova, want to discuss a partnership, or just want to say hello? Fill out the form below, and our team will get back to you shortly.
+      </p>
+
+      <div class="mt-12 bg-gray-900 p-8 md:p-12 rounded-2xl border border-brand/20 max-w-2xl mx-auto text-left">
+        <!-- 
+          To enable actual email sending, this form uses Formspree.
+          1. Go to https://formspree.io/ and create an account.
+          2. Create a new form, and it will give you a unique URL.
+          3. Replace the 'YOUR_FORMSPREE_ENDPOINT' in the action attribute below with your unique URL.
+          4. All form submissions will then be sent to your email address.
+        -->
+        <form id="contactForm" action="https://formspree.io/f/xqadgkoe" method="POST" class="space-y-6">
+          <div>
+            <label for="name" class="block text-sm font-medium text-gray-400">Full Name</label>
+            <input type="text" id="name" name="name" required class="mt-1 block w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-gray-200 focus:outline-none focus:ring-2 focus:ring-brand" />
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-400">Email Address</label>
+            <input type="email" id="email" name="email" required class="mt-1 block w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-gray-200 focus:outline-none focus:ring-2 focus:ring-brand" />
+          </div>
+          <div>
+            <label for="contactNumber" class="block text-sm font-medium text-gray-400">Contact Number</label>
+            <input type="tel" id="contactNumber" name="contactNumber" class="mt-1 block w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-gray-200 focus:outline-none focus:ring-2 focus:ring-brand" />
+          </div>
+          <div>
+            <label for="subject" class="block text-sm font-medium text-gray-400">Subject</label>
+            <input type="text" id="subject" name="subject" required class="mt-1 block w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-gray-200 focus:outline-none focus:ring-2 focus:ring-brand" />
+          </div>
+          <div>
+            <label for="message" class="block text-sm font-medium text-gray-400">Message</label>
+            <textarea id="message" name="message" rows="5" required class="mt-1 block w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-gray-200 focus:outline-none focus:ring-2 focus:ring-brand"></textarea>
+          </div>
+          <div class="flex justify-end">
+            <button type="submit" class="bg-brand text-black font-semibold px-6 py-3 rounded-xl shadow-md hover:shadow-lg transition">
+              Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 mt-24 py-12">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 text-gray-400">
+      <!-- Company -->
+      <div>
+        <div class="flex items-center gap-2 mb-4">
+         <img src="./src/assets/logo.png" alt="Nexrova Logo" class="w-10 h-10 object-contain" />
+          <span class="text-white font-bold">Nexrova</span>
+        </div>
+        <p>B2B AI SaaS helping hotels leverage AI to scale higher. Reduce costs, boost revenue, and automate operations 24/7.</p>
+      </div>
+
+      <!-- Product -->
+      <div>
+        <h3 class="text-white font-semibold mb-3">Product</h3>
+        <ul class="space-y-2">
+          <li><a href="features.html" class="hover:text-brand">Features</a></li>
+          <li><a href="benefits.html" class="hover:text-brand">Benefits</a></li>
+          <li><a href="demo.html" class="hover:text-brand">Request Demo</a></li>
+        </ul>
+      </div>
+
+      <!-- Company -->
+      <div>
+        <h3 class="text-white font-semibold mb-3">Company</h3>
+        <ul class="space-y-2">
+          <li><a href="story.html" class="hover:text-brand">Our Story</a></li>
+          <li><a href="vision.html" class="hover:text-brand">Vision</a></li>
+        </ul>
+      </div>
+
+      <!-- Support -->
+      <div>
+        <h3 class="text-white font-semibold mb-3">Support</h3>
+        <ul class="space-y-2">
+          <li><a href="contact.html" class="hover:text-brand">Contact Us</a></li>
+          <li><a href="#" class="hover:text-brand">Help Center</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-8 text-center text-gray-500 text-sm">
+      © 2025 Nexrova. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script>
+    if (typeof lucide !== 'undefined') {
+      lucide.createIcons();
+    }
+
+    const menuBtn = document.getElementById('menuBtn');
+    const closeMenu = document.getElementById('closeMenu');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.remove('translate-x-full');
+      mobileMenu.classList.add('translate-x-0');
+    });
+
+    closeMenu.addEventListener('click', () => {
+      mobileMenu.classList.add('translate-x-full');
+      mobileMenu.classList.remove('translate-x-0');
+    });
+  </script>
+</body>
+</html>
