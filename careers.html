@@ -1,0 +1,896 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Careers - Nexrova</title>
+  <meta name="description" content="Join the Nexrova team and help shape the future of AI-powered hospitality. Explore career opportunities in AI, software development, and hospitality technology." />
+
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: "#D6B370",
+          },
+        },
+      },
+    };
+  </script>
+
+  <link rel="icon" type="image/x-icon" href="./public/favicon.ico" />
+</head>
+<body class="bg-gray-950 text-white font-sans">
+
+  <header class="fixed top-0 left-0 w-full bg-gray-900/70 backdrop-blur-md z-50">
+    <nav class="max-w-7xl mx-auto px-6 flex justify-between items-center py-2">
+      
+      <a href="index.html" class="flex items-center">
+        <img src="./src/assets/logo.png" alt="Agentic AI Logo" class="w-32 h-32 object-contain -my-6" />
+      </a>
+
+      <div class="hidden md:flex gap-6 items-center">
+        <a href="index.html" class="hover:text-brand">Home</a>
+        <a href="features.html" class="hover:text-brand">Features</a>
+        <a href="benefits.html" class="hover:text-brand">Solutions</a>
+        <a href="story.html" class="hover:text-brand">Story</a>
+        <a href="vision.html" class="hover:text-brand">Vision</a>
+        <a href="careers.html" class="text-brand font-semibold">Careers</a>
+        <a href="contact.html" class="hover:text-brand">Get in Touch</a>
+        <a href="demo.html" class="bg-brand text-white px-4 py-2 rounded-xl font-semibold shadow-md hover:shadow-lg">Request Demo</a>
+      </div>
+
+      <button id="menuBtn" class="md:hidden text-white" aria-label="Toggle mobile menu">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </nav>
+
+    <div id="mobileMenu" class="fixed top-0 right-0 h-full w-64 bg-gray-900 transform translate-x-full transition-transform duration-300 md:hidden z-40">
+      <div class="flex flex-col items-start p-6 gap-4">
+        <button id="closeMenu" class="self-end text-white mb-4">
+          <i data-lucide="x" class="w-6 h-6"></i>
+        </button>
+        <a href="index.html" class="hover:text-brand">Home</a>
+        <a href="features.html" class="hover:text-brand">Features</a>
+        <a href="benefits.html" class="hover:text-brand">Solutions</a>
+        <a href="story.html" class="hover:text-brand">Story</a>
+        <a href="vision.html" class="hover:text-brand">Vision</a>
+        <a href="careers.html" class="text-brand font-semibold">Careers</a>
+        <a href="contact.html" class="hover:text-brand">Get in Touch</a>
+        <a href="demo.html" class="bg-brand text-white px-4 py-2 rounded-xl w-full text-center font-semibold">Request Demo</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-32">
+    <section class="max-w-7xl mx-auto px-6 text-center">
+      <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
+        Join the <span class="text-brand">Nexrova</span> Team
+      </h1>
+      <p class="mt-6 text-lg text-gray-300 max-w-3xl mx-auto">
+        Help us revolutionize the hospitality industry with AI. We're building the future of hotel automation and looking for passionate individuals to join our mission.
+      </p>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 mt-20">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold">Why Work at Nexrova?</h2>
+        <p class="mt-4 text-gray-400 max-w-2xl mx-auto">We're not just building software – we're transforming an entire industry.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-gray-900 p-8 rounded-2xl border border-brand/20 transition-all duration-300 hover:scale-105">
+          <div class="flex justify-center mb-4">
+            <i data-lucide="zap" class="w-12 h-12 text-brand"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-center">Cutting-Edge AI</h3>
+          <p class="mt-4 text-gray-300 text-center">
+            Work with the latest AI technologies and help shape the future of hospitality automation.
+          </p>
+        </div>
+
+        <div class="bg-gray-900 p-8 rounded-2xl border border-brand/20 transition-all duration-300 hover:scale-105">
+          <div class="flex justify-center mb-4">
+            <i data-lucide="users" class="w-12 h-12 text-brand"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-center">Impact-Driven</h3>
+          <p class="mt-4 text-gray-300 text-center">
+            See your work directly improve hotel operations and guest experiences across the industry.
+          </p>
+        </div>
+
+        <div class="bg-gray-900 p-8 rounded-2xl border border-brand/20 transition-all duration-300 hover:scale-105">
+          <div class="flex justify-center mb-4">
+            <i data-lucide="trending-up" class="w-12 h-12 text-brand"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-center">Growth Opportunities</h3>
+          <p class="mt-4 text-gray-300 text-center">
+            Join a fast-growing startup with unlimited potential for career advancement and learning.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 mt-24">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold">Open Positions</h2>
+        <p class="mt-4 text-gray-400 max-w-2xl mx-auto">We're always looking for talented individuals to join our team.</p>
+      </div>
+      <div class="space-y-6">
+        <div class="bg-gray-900 p-6 rounded-xl border border-brand/20 hover:border-brand/40 transition-all duration-300">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <div>
+              <h3 class="text-xl font-semibold">Senior AI Engineer</h3>
+              <p class="text-gray-400 mt-1">Full-time • Remote • Engineering</p>
+              <p class="text-gray-300 mt-2">Lead the development of our AI receptionist and automation systems.</p>
+            </div>
+            <a href="contact.html" class="bg-brand text-black font-semibold px-6 py-2 rounded-xl hover:bg-brand/90 transition whitespace-nowrap">
+              Apply Now
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-gray-900 p-6 rounded-xl border border-brand/20 hover:border-brand/40 transition-all duration-300">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <div>
+              <h3 class="text-xl font-semibold">Full-Stack Developer</h3>
+              <p class="text-gray-400 mt-1">Full-time • Remote • Engineering</p>
+              <p class="text-gray-300 mt-2">Build and maintain our web applications and API integrations.</p>
+            </div>
+            <a href="contact.html" class="bg-brand text-black font-semibold px-6 py-2 rounded-xl hover:bg-brand/90 transition whitespace-nowrap">
+              Apply Now
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-gray-900 p-6 rounded-xl border border-brand/20 hover:border-brand/40 transition-all duration-300">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <div>
+              <h3 class="text-xl font-semibold">Product Manager</h3>
+              <p class="text-gray-400 mt-1">Full-time • Remote • Product</p>
+              <p class="text-gray-300 mt-2">Drive product strategy and work closely with our engineering team.</p>
+            </div>
+            <a href="contact.html" class="bg-brand text-black font-semibold px-6 py-2 rounded-xl hover:bg-brand/90 transition whitespace-nowrap">
+              Apply Now
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-gray-900 p-6 rounded-xl border border-brand/20 hover:border-brand/40 transition-all duration-300">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <div>
+              <h3 class="text-xl font-semibold">Sales Development Representative</h3>
+              <p class="text-gray-400 mt-1">Full-time • Remote • Sales</p>
+              <p class="text-gray-300 mt-2">Help hotels discover the power of AI automation for their business.</p>
+            </div>
+            <a href="contact.html" class="bg-brand text-black font-semibold px-6 py-2 rounded-xl hover:bg-brand/90 transition whitespace-nowrap">
+              Apply Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 mt-24">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold">Our Culture</h2>
+        <p class="mt-4 text-gray-400 max-w-2xl mx-auto">We believe in creating an environment where great ideas thrive.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div>
+          <ul class="space-y-6 text-lg">
+            <li class="flex items-start gap-4">
+              <i data-lucide="heart" class="text-brand flex-shrink-0 w-6 h-6 mt-1"></i>
+              <div>
+                <h3 class="text-xl font-semibold">Passion for Innovation</h3>
+                <p class="text-gray-300">We're driven by the desire to solve real problems and create meaningful impact in the hospitality industry.</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-4">
+              <i data-lucide="users-2" class="text-brand flex-shrink-0 w-6 h-6 mt-1"></i>
+              <div>
+                <h3 class="text-xl font-semibold">Collaborative Spirit</h3>
+                <p class="text-gray-300">We believe the best solutions come from diverse perspectives working together toward a common goal.</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-4">
+              <i data-lucide="book-open" class="text-brand flex-shrink-0 w-6 h-6 mt-1"></i>
+              <div>
+                <h3 class="text-xl font-semibold">Continuous Learning</h3>
+                <p class="text-gray-300">We invest in our team's growth with learning opportunities, conferences, and the latest tools.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="flex justify-center">
+          <div class="w-full h-80 md:h-96 bg-gray-900 rounded-xl flex items-center justify-center p-4">
+            <p class="text-gray-500 text-lg text-center">Team culture illustration placeholder</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 mt-24 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold leading-tight">
+        Don't see the perfect role?
+      </h2>
+      <p class="mt-4 text-lg text-gray-300 max-w-3xl mx-auto">
+        We're always interested in meeting talented people. Send us your resume and tell us how you'd like to contribute to our mission.
+      </p>
+      <div class="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+        <a href="contact.html" class="bg-brand text-black font-semibold px-6 py-3 rounded-xl shadow-md hover:shadow-lg transition">Send Your Resume</a>
+        <a href="contact.html" class="border border-brand text-brand font-semibold px-6 py-3 rounded-xl hover:bg-brand hover:text-black transition">Get in Touch</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-900 mt-24 py-12">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 text-gray-400">
+      <div>
+        <div class="flex flex-col items-start">
+          <a href="index.html">
+            <img src="./src/assets/logo.png" alt="Nexrova Logo" class="w-32 h-32 object-contain" />
+          </a>
+          <p class="mt-2">B2B AI SaaS helping hotels leverage AI to scale higher. Reduce costs, boost revenue, and automate operations 24/7.</p>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="text-white font-semibold mb-3">Product</h3>
+        <ul class="space-y-2">
+          <li><a href="features.html" class="hover:text-brand">Features</a></li>
+          <li><a href="benefits.html" class="hover:text-brand">Solutions</a></li>
+          <li><a href="demo.html" class="hover:text-brand">Request Demo</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-white font-semibold mb-3">Company</h3>
+        <ul class="space-y-2">
+          <li><a href="story.html" class="hover:text-brand">Our Story</a></li>
+          <li><a href="vision.html" class="hover:text-brand">Vision</a></li>
+          <li><a href="careers.html" class="hover:text-brand">Careers</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-white font-semibold mb-3">Support</h3>
+        <ul class="space-y-2">
+          <li><a href="contact.html" class="hover:text-brand">Get in Touch</a></li>
+          <li><a href="#" class="hover:text-brand">Help Center</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-8 text-center text-gray-500 text-sm">
+      © 2025 Nexrova. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    if (typeof lucide !== 'undefined') {
+      lucide.createIcons();
+    }
+
+    const menuBtn = document.getElementById('menuBtn');
+    const closeMenu = document.getElementById('closeMenu');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.remove('translate-x-full');
+      mobileMenu.classList.add('translate-x-0');
+    });
+
+    closeMenu.addEventListener('click', () => {
+      mobileMenu.classList.add('translate-x-full');
+      mobileMenu.classList.remove('translate-x-0');
+    });
+  </script>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Careers at Nexrova - Shape the Future of AI in Hospitality</title>
+  <meta name="description" content="Join the Nexrova team and help shape the future of AI-powered hospitality. Explore career opportunities in AI, software development, and hospitality technology." />
+
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: "#D6B370",
+          },
+        },
+      },
+    };
+  </script>
+
+  <link rel="icon" type="image/x-icon" href="./public/favicon.ico" />
+</head>
+<body class="bg-gray-950 text-white font-sans">
+
+  <header class="fixed top-0 left-0 w-full bg-gray-900/70 backdrop-blur-md z-50">
+    <nav class="max-w-7xl mx-auto px-6 flex justify-between items-center py-2">
+      
+      <a href="index.html" class="flex items-center">
+        <img src="./src/assets/logo.png" alt="Agentic AI Logo" class="w-32 h-32 object-contain -my-6" />
+      </a>
+
+      <div class="hidden md:flex gap-6 items-center">
+        <a href="index.html" class="hover:text-brand">Home</a>
+        <a href="features.html" class="hover:text-brand">Features</a>
+        <a href="benefits.html" class="hover:text-brand">Solutions</a>
+        <a href="story.html" class="hover:text-brand">Story</a>
+        <a href="vision.html" class="hover:text-brand">Vision</a>
+        <a href="careers.html" class="text-brand font-semibold">Careers</a>
+        <a href="contact.html" class="hover:text-brand">Get in Touch</a>
+        <a href="demo.html" class="bg-brand text-white px-4 py-2 rounded-xl font-semibold shadow-md hover:shadow-lg">Request Demo</a>
+      </div>
+
+      <button id="menuBtn" class="md:hidden text-white" aria-label="Toggle mobile menu">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </nav>
+
+    <div id="mobileMenu" class="fixed top-0 right-0 h-full w-64 bg-gray-900 transform translate-x-full transition-transform duration-300 md:hidden z-40">
+      <div class="flex flex-col items-start p-6 gap-4">
+        <button id="closeMenu" class="self-end text-white mb-4">
+          <i data-lucide="x" class="w-6 h-6"></i>
+        </button>
+        <a href="index.html" class="hover:text-brand">Home</a>
+        <a href="features.html" class="hover:text-brand">Features</a>
+        <a href="benefits.html" class="hover:text-brand">Solutions</a>
+        <a href="story.html" class="hover:text-brand">Story</a>
+        <a href="vision.html" class="hover:text-brand">Vision</a>
+        <a href="careers.html" class="text-brand font-semibold">Careers</a>
+        <a href="contact.html" class="hover:text-brand">Get in Touch</a>
+        <a href="demo.html" class="bg-brand text-white px-4 py-2 rounded-xl w-full text-center font-semibold">Request Demo</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-32">
+    <section class="max-w-7xl mx-auto px-6 text-center">
+      <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
+        Careers at <span class="text-brand">Nexrova</span>
+      </h1>
+      <p class="mt-6 text-lg text-gray-300 max-w-3xl mx-auto">
+        Shape the Future of AI in Hospitality
+      </p>
+      <p class="mt-4 text-gray-300 max-w-3xl mx-auto">
+        At Nexrova, we’re not just building software—we’re redefining how hotels interact with their guests. Our AI-first approach automates guest services from check-in and room management to personalized support, freeing staff to focus on what truly matters: exceptional hospitality.
+      </p>
+      <p class="mt-2 text-gray-300 max-w-3xl mx-auto">
+        By joining us, you’ll be part of a team innovating at the intersection of technology and human experience. Your work will directly influence hotel operations, improve efficiency, and elevate guest satisfaction across India—and beyond.
+      </p>
+      <p class="mt-2 text-gray-300 max-w-3xl mx-auto">
+        Whether you’re developing advanced AI algorithms, crafting seamless user experiences, or optimizing backend systems, every contribution helps shape a smarter, more connected hospitality ecosystem.
+      </p>
+      <p class="mt-2 text-brand font-semibold text-xl">
+        Be part of the change. Build the future. Transform hospitality.
+      </p>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 mt-20">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold">Why Intern at Nexrova?</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="bg-gray-900 p-8 rounded-2xl border border-brand/20 transition-all duration-300 hover:scale-105 flex flex-col items-center text-center">
+          <div class="flex justify-center mb-4">
+            <i data-lucide="zap" class="w-12 h-12 text-brand"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-center">Make Real-World Impact</h3>
+          <p class="mt-4 text-gray-300 text-center">
+            Your code, research, and ideas won’t sit on the shelf. You’ll directly contribute to our core product, helping independent hotels thrive.
+          </p>
+        </div>
+        <div class="bg-gray-900 p-8 rounded-2xl border border-brand/20 transition-all duration-300 hover:scale-105 flex flex-col items-center text-center">
+          <div class="flex justify-center mb-4">
+            <i data-lucide="trending-up" class="w-12 h-12 text-brand"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-center">Work on the Cutting Edge</h3>
+          <p class="mt-4 text-gray-300 text-center">
+            Gain hands-on experience with Large Language Models (LLMs), scalable backend systems, and modern full-stack development that solves real business problems.
+          </p>
+        </div>
+        <div class="bg-gray-900 p-8 rounded-2xl border border-brand/20 transition-all duration-300 hover:scale-105 flex flex-col items-center text-center">
+          <div class="flex justify-center mb-4">
+            <i data-lucide="users" class="w-12 h-12 text-brand"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-center">Be More Than Just an Intern</h3>
+          <p class="mt-4 text-gray-300 text-center">
+            At Nexrova, your voice matters. Work closely with founders, take ownership of projects, and gain startup-level exposure.
+          </p>
+        </div>
+        <div class="bg-gray-900 p-8 rounded-2xl border border-brand/20 transition-all duration-300 hover:scale-105 flex flex-col items-center text-center">
+          <div class="flex justify-center mb-4">
+            <i data-lucide="user-plus" class="w-12 h-12 text-brand"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-center">Grow with a Pioneering Team</h3>
+          <p class="mt-4 text-gray-300 text-center">
+            Mentorship and growth are built into our culture. Learn the ins and outs of building a B2B SaaS company—technically and strategically.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 mt-24">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold">Open Internship Roles</h2>
+      </div>
+      <div class="space-y-6">
+        <div class="bg-gray-900 p-6 rounded-xl border border-brand/20 hover:border-brand/40 transition-all duration-300">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <div class="md:w-3/4">
+              <h3 class="text-xl font-semibold">Backend Developer Intern – AI/LLM</h3>
+              <p class="text-gray-400 mt-1">
+                <strong class="text-white">Skills:</strong> Python, LangChain/LLM APIs (OpenAI/Anthropic), FastAPI/Flask, Redis (preferred), Git/GitHub
+              </p>
+              <p class="text-gray-300 mt-2">
+                <strong class="text-white">Role:</strong> Build AI-powered conversational flows for WhatsApp-based hotel automation. Connect LLMs with real hotel workflows for smooth, scalable interactions.
+              </p>
+            </div>
+            <a href="#apply" class="bg-brand text-black font-semibold px-6 py-2 rounded-xl hover:bg-brand/90 transition whitespace-nowrap text-center md:w-auto">
+              Apply Now
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-gray-900 p-6 rounded-xl border border-brand/20 hover:border-brand/40 transition-all duration-300">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <div class="md:w-3/4">
+              <h3 class="text-xl font-semibold">Backend Developer Intern – Systems & Integrations</h3>
+              <p class="text-gray-400 mt-1">
+                <strong class="text-white">Skills:</strong> Python/Node.js, REST APIs & webhooks, SQL databases, Authentication/Security (JWT/OAuth), Docker (preferred)
+              </p>
+              <p class="text-gray-300 mt-2">
+                <strong class="text-white">Role:</strong> Ensure backend reliability and integrations. Connect APIs (WhatsApp Cloud, payments), design scalable databases, and secure infrastructure.
+              </p>
+            </div>
+            <a href="#apply" class="bg-brand text-black font-semibold px-6 py-2 rounded-xl hover:bg-brand/90 transition whitespace-nowrap text-center md:w-auto">
+              Apply Now
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-gray-900 p-6 rounded-xl border border-brand/20 hover:border-brand/40 transition-all duration-300">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <div class="md:w-3/4">
+              <h3 class="text-xl font-semibold">Full-Stack Developer Intern</h3>
+              <p class="text-gray-400 mt-1">
+                <strong class="text-white">Skills:</strong> React/Next.js, Node.js/Python, SQL databases, API integration, UI/UX fundamentals (Figma a plus)
+              </p>
+              <p class="text-gray-300 mt-2">
+                <strong class="text-white">Role:</strong> Build the admin dashboard, connecting backend services with a clean, user-friendly interface for hotel staff.
+              </p>
+            </div>
+            <a href="#apply" class="bg-brand text-black font-semibold px-6 py-2 rounded-xl hover:bg-brand/90 transition whitespace-nowrap text-center md:w-auto">
+              Apply Now
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-gray-900 p-6 rounded-xl border border-brand/20 hover:border-brand/40 transition-all duration-300">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <div class="md:w-3/4">
+              <h3 class="text-xl font-semibold">Operations & Business Research Intern</h3>
+              <p class="text-gray-400 mt-1">
+                <strong class="text-white">Skills:</strong> Research & analytics, documentation/presentation, market & competitor analysis, SaaS/hospitality knowledge (plus), strong communication
+              </p>
+              <p class="text-gray-300 mt-2">
+                <strong class="text-white">Role:</strong> Support business strategy. Research industry trends, benchmark competitors, and assist with documentation, case studies, and pilot program materials.
+              </p>
+            </div>
+            <a href="#apply" class="bg-brand text-black font-semibold px-6 py-2 rounded-xl hover:bg-brand/90 transition whitespace-nowrap text-center md:w-auto">
+              Apply Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 mt-24 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold leading-tight">
+        Not Fully Qualified? Don’t Worry.
+      </h2>
+      <p class="mt-4 text-lg text-gray-300 max-w-3xl mx-auto">
+        We value potential over credentials. If you’re passionate, committed, and ready to work on real projects, we’ll help you upskill along the way. Every intern goes through a probation period with hands-on training, mentorship, and guidance to help you grow while contributing to building the next generation of AI-powered hospitality solutions.
+      </p>
+    </section>
+
+    <section id="apply" class="max-w-7xl mx-auto px-6 mt-24 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold leading-tight">
+        How to Apply
+      </h2>
+      <p class="mt-4 text-lg text-gray-300 max-w-3xl mx-auto">
+        Ready to build the future with us?
+      </p>
+      <div class="mt-8 flex flex-col sm:flex-row justify-center items-center gap-4">
+        <a href="mailto:careers@nexrova.com" class="bg-brand text-black font-semibold px-6 py-3 rounded-xl shadow-md hover:shadow-lg transition flex items-center gap-2">
+          <i data-lucide="mail" class="w-5 h-5"></i> Send Your Resume
+        </a>
+      </div>
+      <p class="mt-4 text-lg text-gray-300 max-w-3xl mx-auto">
+        <strong class="font-bold text-brand"> We’re looking for people who are excited to learn, solve problems, and make an impact. Your journey starts here.</strong>
+      </p>
+    </section>
+  </main>
+
+  <footer class="bg-gray-900 mt-24 py-12">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 text-gray-400">
+      <div>
+        <div class="flex flex-col items-start">
+          <a href="index.html">
+            <img src="./src/assets/logo.png" alt="Nexrova Logo" class="w-32 h-32 object-contain" />
+          </a>
+          <p class="mt-2">B2B AI SaaS helping hotels leverage AI to scale higher. Reduce costs, boost revenue, and automate operations 24/7.</p>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="text-white font-semibold mb-3">Product</h3>
+        <ul class="space-y-2">
+          <li><a href="features.html" class="hover:text-brand">Features</a></li>
+          <li><a href="benefits.html" class="hover:text-brand">Solutions</a></li>
+          <li><a href="demo.html" class="hover:text-brand">Request Demo</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-white font-semibold mb-3">Company</h3>
+        <ul class="space-y-2">
+          <li><a href="story.html" class="hover:text-brand">Our Story</a></li>
+          <li><a href="vision.html" class="hover:text-brand">Vision</a></li>
+          <li><a href="careers.html" class="hover:text-brand">Careers</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-white font-semibold mb-3">Support</h3>
+        <ul class="space-y-2">
+          <li><a href="contact.html" class="hover:text-brand">Get in Touch</a></li>
+          <li><a href="#" class="hover:text-brand">Help Center</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-8 text-center text-gray-500 text-sm">
+      © 2025 Nexrova. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    if (typeof lucide !== 'undefined') {
+      lucide.createIcons();
+    }
+
+    const menuBtn = document.getElementById('menuBtn');
+    const closeMenu = document.getElementById('closeMenu');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.remove('translate-x-full');
+      mobileMenu.classList.add('translate-x-0');
+    });
+
+    closeMenu.addEventListener('click', () => {
+      mobileMenu.classList.add('translate-x-full');
+      mobileMenu.classList.remove('translate-x-0');
+    });
+  </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Careers at Nexrova - Shape the Future of AI in Hospitality</title>
+  <meta name="description" content="Join the Nexrova team and help shape the future of AI-powered hospitality. Explore career opportunities in AI, software development, and hospitality technology." />
+
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: "#D6B370",
+          },
+        },
+      },
+    };
+  </script>
+
+  <link rel="icon" type="image/x-icon" href="./public/favicon.ico" />
+</head>
+<body class="bg-gray-950 text-white font-sans">
+
+  <header class="fixed top-0 left-0 w-full bg-gray-900/70 backdrop-blur-md z-50">
+    <nav class="max-w-7xl mx-auto px-6 flex justify-between items-center py-2">
+      
+      <a href="index.html" class="flex items-center">
+        <img src="./src/assets/logo.png" alt="Agentic AI Logo" class="w-32 h-32 object-contain -my-6" />
+      </a>
+
+      <div class="hidden md:flex gap-6 items-center">
+        <a href="index.html" class="hover:text-brand">Home</a>
+        <a href="features.html" class="hover:text-brand">Features</a>
+        <a href="benefits.html" class="hover:text-brand">Solutions</a>
+        <a href="story.html" class="hover:text-brand">Story</a>
+        <a href="vision.html" class="hover:text-brand">Vision</a>
+        <a href="careers.html" class="text-brand font-semibold">Careers</a>
+        <a href="contact.html" class="hover:text-brand">Get in Touch</a>
+        <a href="demo.html" class="bg-brand text-white px-4 py-2 rounded-xl font-semibold shadow-md hover:shadow-lg">Request Demo</a>
+      </div>
+
+      <button id="menuBtn" class="md:hidden text-white" aria-label="Toggle mobile menu">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </nav>
+
+    <div id="mobileMenu" class="fixed top-0 right-0 h-full w-64 bg-gray-900 transform translate-x-full transition-transform duration-300 md:hidden z-40">
+      <div class="flex flex-col items-start p-6 gap-4">
+        <button id="closeMenu" class="self-end text-white mb-4">
+          <i data-lucide="x" class="w-6 h-6"></i>
+        </button>
+        <a href="index.html" class="hover:text-brand">Home</a>
+        <a href="features.html" class="hover:text-brand">Features</a>
+        <a href="benefits.html" class="hover:text-brand">Solutions</a>
+        <a href="story.html" class="hover:text-brand">Story</a>
+        <a href="vision.html" class="hover:text-brand">Vision</a>
+        <a href="careers.html" class="text-brand font-semibold">Careers</a>
+        <a href="contact.html" class="hover:text-brand">Get in Touch</a>
+        <a href="demo.html" class="bg-brand text-white px-4 py-2 rounded-xl w-full text-center font-semibold">Request Demo</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-32">
+    <section class="max-w-7xl mx-auto px-6 text-center">
+      <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
+        Careers at <span class="text-brand">Nexrova</span>
+      </h1>
+      <p class="mt-6 text-lg text-gray-300 max-w-3xl mx-auto">
+        Shape the Future of AI in Hospitality
+      </p>
+      <p class="mt-4 text-gray-300 max-w-3xl mx-auto">
+        At Nexrova, we’re not just building software—we’re redefining how hotels interact with their guests. Our AI-first approach automates guest services from check-in and room management to personalized support, freeing staff to focus on what truly matters: exceptional hospitality.
+      </p>
+      <p class="mt-2 text-gray-300 max-w-3xl mx-auto">
+        By joining us, you’ll be part of a team innovating at the intersection of technology and human experience. Your work will directly influence hotel operations, improve efficiency, and elevate guest satisfaction across India—and beyond.
+      </p>
+      <p class="mt-2 text-gray-300 max-w-3xl mx-auto">
+        Whether you’re developing advanced AI algorithms, crafting seamless user experiences, or optimizing backend systems, every contribution helps shape a smarter, more connected hospitality ecosystem.
+      </p>
+      <p class="mt-2 text-brand font-semibold text-xl">
+        Be part of the change. Build the future. Transform hospitality.
+      </p>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 mt-20">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold">Why Intern at Nexrova?</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="bg-gray-900 p-8 rounded-2xl border border-brand/20 transition-all duration-300 hover:scale-105 flex flex-col items-center text-center">
+          <div class="flex justify-center mb-4">
+            <i data-lucide="zap" class="w-12 h-12 text-brand"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-center">Make Real-World Impact</h3>
+          <p class="mt-4 text-gray-300 text-center">
+            Your code, research, and ideas won’t sit on the shelf. You’ll directly contribute to our core product, helping independent hotels thrive.
+          </p>
+        </div>
+        <div class="bg-gray-900 p-8 rounded-2xl border border-brand/20 transition-all duration-300 hover:scale-105 flex flex-col items-center text-center">
+          <div class="flex justify-center mb-4">
+            <i data-lucide="trending-up" class="w-12 h-12 text-brand"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-center">Work on the Cutting Edge</h3>
+          <p class="mt-4 text-gray-300 text-center">
+            Gain hands-on experience with Large Language Models (LLMs), scalable backend systems, and modern full-stack development that solves real business problems.
+          </p>
+        </div>
+        <div class="bg-gray-900 p-8 rounded-2xl border border-brand/20 transition-all duration-300 hover:scale-105 flex flex-col items-center text-center">
+          <div class="flex justify-center mb-4">
+            <i data-lucide="users" class="w-12 h-12 text-brand"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-center">Be More Than Just an Intern</h3>
+          <p class="mt-4 text-gray-300 text-center">
+            At Nexrova, your voice matters. Work closely with founders, take ownership of projects, and gain startup-level exposure.
+          </p>
+        </div>
+        <div class="bg-gray-900 p-8 rounded-2xl border border-brand/20 transition-all duration-300 hover:scale-105 flex flex-col items-center text-center">
+          <div class="flex justify-center mb-4">
+            <i data-lucide="user-plus" class="w-12 h-12 text-brand"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-center">Grow with a Pioneering Team</h3>
+          <p class="mt-4 text-gray-300 text-center">
+            Mentorship and growth are built into our culture. Learn the ins and outs of building a B2B SaaS company—technically and strategically.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 mt-24">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold">Open Internship Roles</h2>
+      </div>
+      <div class="space-y-6">
+        <div class="bg-gray-900 p-6 rounded-xl border border-brand/20 hover:border-brand/40 transition-all duration-300">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <div class="md:w-3/4">
+              <h3 class="text-xl font-semibold">Backend Developer Intern – AI/LLM</h3>
+              <p class="text-gray-400 mt-1">
+                <strong class="text-white">Skills:</strong> Python, LangChain/LLM APIs (OpenAI/Anthropic), FastAPI/Flask, Redis (preferred), Git/GitHub
+              </p>
+              <p class="text-gray-300 mt-2">
+                <strong class="text-white">Role:</strong> Build AI-powered conversational flows for WhatsApp-based hotel automation. Connect LLMs with real hotel workflows for smooth, scalable interactions.
+              </p>
+            </div>
+            <a href="#apply" class="bg-brand text-black font-semibold px-6 py-2 rounded-xl hover:bg-brand/90 transition whitespace-nowrap text-center md:w-auto">
+              Apply Now
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-gray-900 p-6 rounded-xl border border-brand/20 hover:border-brand/40 transition-all duration-300">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <div class="md:w-3/4">
+              <h3 class="text-xl font-semibold">Backend Developer Intern – Systems & Integrations</h3>
+              <p class="text-gray-400 mt-1">
+                <strong class="text-white">Skills:</strong> Python/Node.js, REST APIs & webhooks, SQL databases, Authentication/Security (JWT/OAuth), Docker (preferred)
+              </p>
+              <p class="text-gray-300 mt-2">
+                <strong class="text-white">Role:</strong> Ensure backend reliability and integrations. Connect APIs (WhatsApp Cloud, payments), design scalable databases, and secure infrastructure.
+              </p>
+            </div>
+            <a href="#apply" class="bg-brand text-black font-semibold px-6 py-2 rounded-xl hover:bg-brand/90 transition whitespace-nowrap text-center md:w-auto">
+              Apply Now
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-gray-900 p-6 rounded-xl border border-brand/20 hover:border-brand/40 transition-all duration-300">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <div class="md:w-3/4">
+              <h3 class="text-xl font-semibold">Full-Stack Developer Intern</h3>
+              <p class="text-gray-400 mt-1">
+                <strong class="text-white">Skills:</strong> React/Next.js, Node.js/Python, SQL databases, API integration, UI/UX fundamentals (Figma a plus)
+              </p>
+              <p class="text-gray-300 mt-2">
+                <strong class="text-white">Role:</strong> Build the admin dashboard, connecting backend services with a clean, user-friendly interface for hotel staff.
+              </p>
+            </div>
+            <a href="#apply" class="bg-brand text-black font-semibold px-6 py-2 rounded-xl hover:bg-brand/90 transition whitespace-nowrap text-center md:w-auto">
+              Apply Now
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-gray-900 p-6 rounded-xl border border-brand/20 hover:border-brand/40 transition-all duration-300">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <div class="md:w-3/4">
+              <h3 class="text-xl font-semibold">Operations & Business Research Intern</h3>
+              <p class="text-gray-400 mt-1">
+                <strong class="text-white">Skills:</strong> Research & analytics, documentation/presentation, market & competitor analysis, SaaS/hospitality knowledge (plus), strong communication
+              </p>
+              <p class="text-gray-300 mt-2">
+                <strong class="text-white">Role:</strong> Support business strategy. Research industry trends, benchmark competitors, and assist with documentation, case studies, and pilot program materials.
+              </p>
+            </div>
+            <a href="#apply" class="bg-brand text-black font-semibold px-6 py-2 rounded-xl hover:bg-brand/90 transition whitespace-nowrap text-center md:w-auto">
+              Apply Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 mt-24 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold leading-tight">
+        Not Fully Qualified? Don’t Worry.
+      </h2>
+      <p class="mt-4 text-lg text-gray-300 max-w-3xl mx-auto">
+        We value potential over credentials. If you’re passionate, committed, and ready to work on real projects, we’ll help you upskill along the way. Every intern goes through a probation period with hands-on training, mentorship, and guidance to help you grow while contributing to building the next generation of AI-powered hospitality solutions.
+      </p>
+    </section>
+
+    <section id="apply" class="max-w-7xl mx-auto px-6 mt-24 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold leading-tight">
+        How to Apply
+      </h2>
+      <div class="mt-4 flex flex-col sm:flex-row justify-center items-center gap-4">
+        <a href="mailto:careers@nexrova.com" class="bg-brand text-black font-semibold px-6 py-3 rounded-xl shadow-md hover:shadow-lg transition flex items-center gap-2">
+          <i data-lucide="mail" class="w-5 h-5"></i> Send Your Resume
+        </a>
+      </div>
+      <p class="mt-8 text-lg text-gray-300 max-w-3xl mx-auto">
+        Send your resume, a brief note about why you’re interested in the role, and links to your GitHub & LinkedIn to:
+        <br>
+        <span class="text-brand font-bold">careers@nexrova.com</span>
+      </p>
+      <p class="mt-4 text-lg text-gray-300 max-w-3xl mx-auto">
+        <strong class="font-bold text-brand">✨ We’re looking for people who are excited to learn, solve problems, and make an impact. Your journey starts here.</strong>
+      </p>
+    </section>
+  </main>
+
+  <footer class="bg-gray-900 mt-24 py-12">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 text-gray-400">
+      <div>
+        <div class="flex flex-col items-start">
+          <a href="index.html">
+            <img src="./src/assets/logo.png" alt="Nexrova Logo" class="w-32 h-32 object-contain" />
+          </a>
+          <p class="mt-2">B2B AI SaaS helping hotels leverage AI to scale higher. Reduce costs, boost revenue, and automate operations 24/7.</p>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="text-white font-semibold mb-3">Product</h3>
+        <ul class="space-y-2">
+          <li><a href="features.html" class="hover:text-brand">Features</a></li>
+          <li><a href="benefits.html" class="hover:text-brand">Solutions</a></li>
+          <li><a href="demo.html" class="hover:text-brand">Request Demo</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-white font-semibold mb-3">Company</h3>
+        <ul class="space-y-2">
+          <li><a href="story.html" class="hover:text-brand">Our Story</a></li>
+          <li><a href="vision.html" class="hover:text-brand">Vision</a></li>
+          <li><a href="careers.html" class="hover:text-brand">Careers</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-white font-semibold mb-3">Support</h3>
+        <ul class="space-y-2">
+          <li><a href="contact.html" class="hover:text-brand">Get in Touch</a></li>
+          <li><a href="#" class="hover:text-brand">Help Center</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-8 text-center text-gray-500 text-sm">
+      © 2025 Nexrova. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    if (typeof lucide !== 'undefined') {
+      lucide.createIcons();
+    }
+
+    const menuBtn = document.getElementById('menuBtn');
+    const closeMenu = document.getElementById('closeMenu');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.remove('translate-x-full');
+      mobileMenu.classList.add('translate-x-0');
+    });
+
+    closeMenu.addEventListener('click', () => {
+      mobileMenu.classList.add('translate-x-full');
+      mobileMenu.classList.remove('translate-x-0');
+    });
+  </script>
+</body>
+</html>
