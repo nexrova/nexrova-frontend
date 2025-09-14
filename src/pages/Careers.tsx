@@ -34,7 +34,7 @@ const Careers = () => {
     {
       title: "Senior AI Engineer",
       department: "Engineering",
-      location: "San Francisco, CA",
+      location: "Chennai, India",
       type: "Full-time",
       remote: true,
       description: "Build and optimize machine learning models for hotel automation systems. Work with NLP, computer vision, and predictive analytics.",
