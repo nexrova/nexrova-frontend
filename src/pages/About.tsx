@@ -32,26 +32,26 @@ const About = () => {
 
   const team = [
     {
-      name: "Sarah Chen",
+      name: "Jeevan Suresh",
       role: "CEO & Co-founder",
       bio: "Former VP of Engineering at Expedia with 15+ years in hospitality technology.",
       image: "https://images.unsplash.com/photo-1494790108755-2616b612b372?w=400&h=400&fit=crop&crop=face"
     },
     {
-      name: "Michael Rodriguez",
-      role: "CTO & Co-founder",
+      name: "Subrat Das",
+      role: "Co-founder",
       bio: "AI researcher and former Tesla autonomy engineer with expertise in machine learning systems.",
       image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face"
     },
     {
-      name: "Dr. Lisa Park",
-      role: "Head of AI Research",
+      name: "Stuti Swaminathan",
+      role: "Software and Market Research Intern",
       bio: "PhD in Computer Science from Stanford, specializing in natural language processing and conversational AI.",
       image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face"
     },
     {
-      name: "David Thompson",
-      role: "VP of Sales",
+      name: "Aaron George Varghese",
+      role: "AI Backend Intern",
       bio: "20+ years in hospitality sales, formerly at Salesforce and Oracle Hospitality.",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
     }
@@ -77,7 +77,7 @@ const About = () => {
               <span className="gradient-text">Artificial Intelligence</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              Founded in 2020, Nexrova is on a mission to transform how hotels operate, 
+              Founded in 2025, Nexrova is on a mission to transform how hotels operate, 
               making them more efficient, profitable, and guest-focused through cutting-edge AI technology.
             </p>
           </div>
