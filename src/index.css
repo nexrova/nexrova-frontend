@@ -6,112 +6,119 @@
 
 @layer base {
   :root {
-    /* Brand Colors - Blue & Dark Gray Theme */
-    --background: 0 0% 100%;
-    --foreground: 215 28% 17%;
+    /* Premium SaaS Hospitality Palette */
+    --background: 0 0% 100%; /* White */
+    --foreground: 215 28% 17%; /* Charcoal Gray */
 
-    --card: 0 0% 100%;
-    --card-foreground: 215 28% 17%;
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 215 28% 17%; /* Charcoal Gray */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 215 28% 17%;
+    --popover: 0 0% 100%; /* White */
+    --popover-foreground: 215 28% 17%; /* Charcoal Gray */
 
-    --primary: 217 91% 60%;
-    --primary-foreground: 0 0% 100%;
-    --primary-hover: 217 91% 55%;
+    --primary: 195 100% 50%; /* Bright Cyan */
+    --primary-foreground: 0 0% 100%; /* White */
+    --primary-hover: 195 100% 45%; /* Darker Cyan */
 
-    --secondary: 210 40% 96%;
-    --secondary-foreground: 215 28% 17%;
+    --secondary: 0 0% 96%; /* Soft Gray */
+    --secondary-foreground: 215 28% 17%; /* Charcoal Gray */
 
-    --muted: 210 40% 96%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 0 0% 96%; /* Soft Gray */
+    --muted-foreground: 215 20% 65%; /* Medium Gray */
 
-    --accent: 210 40% 96%;
-    --accent-foreground: 215 28% 17%;
+    --accent: 0 0% 96%; /* Soft Gray */
+    --accent-foreground: 215 28% 17%; /* Charcoal Gray */
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 214 32% 91%;
-    --input: 214 32% 91%;
-    --ring: 217 91% 60%;
+    --border: 0 0% 96%; /* Soft Gray */
+    --input: 0 0% 96%; /* Soft Gray */
+    --ring: 195 100% 50%; /* Bright Cyan */
 
     --radius: 0.75rem;
 
-    /* Custom Nexrova Brand Colors */
-    --nexrova-blue: 217 91% 60%;
-    --nexrova-blue-dark: 217 91% 45%;
-    --nexrova-gray-dark: 215 28% 17%;
-    --nexrova-gray-light: 210 20% 98%;
-    --nexrova-text-muted: 215 20% 65%;
+    /* Premium Nexrova Brand Colors */
+    --nexrova-navy: 215 75% 15%; /* Deep Navy #0A2540 */
+    --nexrova-cyan: 195 100% 50%; /* Bright Cyan #00CFFF */
+    --nexrova-gold: 42 60% 50%; /* Metallic Gold #C89B3C */
+    --nexrova-white: 0 0% 100%; /* White #FFFFFF */
+    --nexrova-soft-gray: 0 0% 96%; /* Soft Gray #F5F6FA */
+    --nexrova-charcoal: 215 28% 17%; /* Charcoal Gray #111827 */
+    --nexrova-medium-gray: 215 20% 65%; /* Medium Gray #6B7280 */
 
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--nexrova-blue)), hsl(var(--nexrova-blue-dark)));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--nexrova-blue)) 0%, hsl(217 91% 45%) 50%, hsl(215 28% 17%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(210 40% 98%) 100%);
+    /* Premium Gradients */
+    --gradient-cyan-purple: linear-gradient(90deg, #00CFFF, #6A00F5);
+    --gradient-primary: linear-gradient(90deg, #00CFFF, #6A00F5);
+    --gradient-hero: linear-gradient(135deg, #FFFFFF 0%, #F5F6FA 50%, #FFFFFF 100%);
+    --gradient-card: linear-gradient(145deg, #FFFFFF 0%, #F5F6FA 100%);
+    --gradient-gold: linear-gradient(135deg, #C89B3C, #B8860B);
 
-    /* Shadows */
-    --shadow-elegant: 0 10px 30px -10px hsl(var(--nexrova-blue) / 0.2);
-    --shadow-card: 0 4px 20px -2px hsl(215 28% 17% / 0.08);
-    --shadow-hover: 0 8px 30px -8px hsl(var(--nexrova-blue) / 0.25);
+    /* Premium Shadows */
+    --shadow-elegant: 0 10px 30px -10px rgba(10, 37, 64, 0.2);
+    --shadow-card: 0 4px 20px -2px rgba(10, 37, 64, 0.08);
+    --shadow-hover: 0 8px 30px -8px rgba(0, 207, 255, 0.25);
+    --shadow-gold: 0 4px 20px -2px rgba(200, 155, 60, 0.3);
+    --shadow-cyan: 0 0 20px rgba(0, 207, 255, 0.3);
 
-    /* Animations */
+    /* Premium Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-spring: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    --transition-glow: all 0.3s ease-in-out;
 
     /* Sidebar colors */
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 215 75% 15%; /* Deep Navy */
+    --sidebar-foreground: 0 0% 100%; /* White */
+    --sidebar-primary: 195 100% 50%; /* Bright Cyan */
+    --sidebar-primary-foreground: 0 0% 100%; /* White */
+    --sidebar-accent: 0 0% 96%; /* Soft Gray */
+    --sidebar-accent-foreground: 215 28% 17%; /* Charcoal Gray */
+    --sidebar-border: 0 0% 96%; /* Soft Gray */
+    --sidebar-ring: 195 100% 50%; /* Bright Cyan */
   }
 
   .dark {
-    --background: 215 28% 17%;
-    --foreground: 0 0% 100%;
+    --background: 215 75% 15%; /* Deep Navy */
+    --foreground: 0 0% 100%; /* White */
 
-    --card: 215 28% 17%;
-    --card-foreground: 0 0% 100%;
+    --card: 215 75% 15%; /* Deep Navy */
+    --card-foreground: 0 0% 100%; /* White */
 
-    --popover: 215 28% 17%;
-    --popover-foreground: 0 0% 100%;
+    --popover: 215 75% 15%; /* Deep Navy */
+    --popover-foreground: 0 0% 100%; /* White */
 
-    --primary: 217 91% 60%;
-    --primary-foreground: 215 28% 17%;
-    --primary-hover: 217 91% 65%;
+    --primary: 195 100% 50%; /* Bright Cyan */
+    --primary-foreground: 215 75% 15%; /* Deep Navy */
+    --primary-hover: 195 100% 55%; /* Lighter Cyan */
 
-    --secondary: 215 25% 25%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 0 0% 96%; /* Soft Gray */
+    --secondary-foreground: 215 28% 17%; /* Charcoal Gray */
 
-    --muted: 215 25% 25%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 0 0% 96%; /* Soft Gray */
+    --muted-foreground: 215 20% 65%; /* Medium Gray */
 
-    --accent: 215 25% 25%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 0 0% 96%; /* Soft Gray */
+    --accent-foreground: 215 28% 17%; /* Charcoal Gray */
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 215 25% 25%;
-    --input: 215 25% 25%;
-    --ring: 217 91% 60%;
+    --border: 0 0% 96%; /* Soft Gray */
+    --input: 0 0% 96%; /* Soft Gray */
+    --ring: 195 100% 50%; /* Bright Cyan */
 
     /* Dark mode gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(215 28% 17%) 0%, hsl(217 91% 60%) 50%, hsl(217 91% 45%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(215 25% 25%) 0%, hsl(215 28% 20%) 100%);
+    --gradient-hero: linear-gradient(135deg, #0A2540 0%, #00CFFF 50%, #6A00F5 100%);
+    --gradient-card: linear-gradient(145deg, #0A2540 0%, #1a365d 100%);
 
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 215 75% 15%; /* Deep Navy */
+    --sidebar-foreground: 0 0% 100%; /* White */
+    --sidebar-primary: 195 100% 50%; /* Bright Cyan */
+    --sidebar-primary-foreground: 0 0% 100%; /* White */
+    --sidebar-accent: 0 0% 96%; /* Soft Gray */
+    --sidebar-accent-foreground: 215 28% 17%; /* Charcoal Gray */
+    --sidebar-border: 0 0% 96%; /* Soft Gray */
+    --sidebar-ring: 195 100% 50%; /* Bright Cyan */
   }
 }
 
@@ -131,10 +138,16 @@
 }
 
 @layer components {
+  /* Premium Gradient Text */
   .gradient-text {
-    @apply bg-gradient-to-r from-nexrova-blue to-nexrova-blue-dark bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-nexrova-cyan to-purple-600 bg-clip-text text-transparent;
   }
 
+  .gradient-text-gold {
+    @apply bg-gradient-to-r from-nexrova-gold to-yellow-600 bg-clip-text text-transparent;
+  }
+
+  /* Premium Backgrounds */
   .gradient-hero {
     background: var(--gradient-hero);
   }
@@ -143,6 +156,15 @@
     background: var(--gradient-card);
   }
 
+  .gradient-cyan-purple {
+    background: var(--gradient-cyan-purple);
+  }
+
+  .gradient-gold {
+    background: var(--gradient-gold);
+  }
+
+  /* Premium Shadows */
   .shadow-elegant {
     box-shadow: var(--shadow-elegant);
   }
@@ -155,11 +177,101 @@
     box-shadow: var(--shadow-hover);
   }
 
+  .shadow-gold {
+    box-shadow: var(--shadow-gold);
+  }
+
+  .shadow-cyan {
+    box-shadow: var(--shadow-cyan);
+  }
+
+  /* Premium Transitions */
   .transition-smooth {
     transition: var(--transition-smooth);
   }
 
   .transition-spring {
     transition: var(--transition-spring);
+  }
+
+  .transition-glow {
+    transition: var(--transition-glow);
+  }
+
+  /* Premium Hover Effects */
+  .hover-glow-cyan:hover {
+    box-shadow: var(--shadow-cyan);
+    transform: translateY(-2px);
+  }
+
+  .hover-glow-gold:hover {
+    box-shadow: var(--shadow-gold);
+    transform: translateY(-2px);
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-hover);
+  }
+
+  /* Premium Button Styles */
+  .btn-gradient {
+    background: var(--gradient-cyan-purple);
+    color: white;
+    border: none;
+    transition: var(--transition-smooth);
+  }
+
+  .btn-gradient:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-cyan);
+  }
+
+  .btn-gold {
+    background: transparent;
+    color: var(--nexrova-navy);
+    border: 2px solid var(--nexrova-gold);
+    transition: var(--transition-smooth);
+  }
+
+  .btn-gold:hover {
+    background: var(--nexrova-gold);
+    color: white;
+    box-shadow: var(--shadow-gold);
+  }
+
+  /* Premium Section Backgrounds */
+  .section-white {
+    background: #FFFFFF;
+  }
+
+  .section-soft-gray {
+    background: #F5F6FA;
+  }
+
+  .section-navy {
+    background: #0A2540;
+    color: white;
+  }
+
+  /* Premium Text Colors */
+  .text-navy {
+    color: #0A2540;
+  }
+
+  .text-cyan {
+    color: #00CFFF;
+  }
+
+  .text-gold {
+    color: #C89B3C;
+  }
+
+  .text-charcoal {
+    color: #111827;
+  }
+
+  .text-medium-gray {
+    color: #6B7280;
   }
 }

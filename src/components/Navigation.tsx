@@ -18,15 +18,18 @@ const Navigation = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className="bg-background/95 backdrop-blur-md border-b border-border sticky top-0 z-50">
+    <nav className="bg-nexrova-navy backdrop-blur-md border-b border-nexrova-soft-gray sticky top-0 z-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-primary to-primary-hover rounded-lg flex items-center justify-center">
+            <div className="w-8 h-8 gradient-cyan-purple rounded-lg flex items-center justify-center shadow-cyan">
               <span className="text-white font-bold text-lg">N</span>
             </div>
-            <span className="font-bold text-xl text-foreground">Nexrova</span>
+            <span className="font-bold text-xl text-white relative">
+              Nexrova
+              <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-nexrova-gold"></div>
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -35,14 +38,14 @@ const Navigation = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`text-sm font-medium transition-smooth hover:text-primary ${
-                  isActive(item.path) ? 'text-primary' : 'text-muted-foreground'
+                className={`text-sm font-medium transition-smooth hover:text-nexrova-cyan ${
+                  isActive(item.path) ? 'text-nexrova-cyan' : 'text-white'
                 }`}
               >
                 {item.name}
               </Link>
             ))}
-            <Button asChild variant="default" className="ml-4">
+            <Button asChild className="ml-4 btn-gradient">
               <Link to="/request-demo">Request Demo</Link>
             </Button>
           </div>
@@ -53,7 +56,7 @@ const Navigation = () => {
               variant="ghost"
               size="sm"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-muted-foreground"
+              className="text-white hover:text-nexrova-cyan"
             >
               {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </Button>
@@ -62,7 +65,7 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden border-t border-border">
+          <div className="md:hidden border-t border-nexrova-soft-gray">
             <div className="px-2 pt-2 pb-3 space-y-1">
               {navItems.map((item) => (
                 <Link
@@ -70,8 +73,8 @@ const Navigation = () => {
                   to={item.path}
                   className={`block px-3 py-2 text-sm font-medium rounded-md transition-smooth ${
                     isActive(item.path)
-                      ? 'text-primary bg-primary/10'
-                      : 'text-muted-foreground hover:text-primary hover:bg-muted'
+                      ? 'text-nexrova-cyan bg-nexrova-cyan/10'
+                      : 'text-white hover:text-nexrova-cyan hover:bg-white/10'
                   }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
@@ -79,7 +82,7 @@ const Navigation = () => {
                 </Link>
               ))}
               <div className="px-3 pt-2">
-                <Button asChild className="w-full">
+                <Button asChild className="w-full btn-gradient">
                   <Link to="/request-demo" onClick={() => setIsMenuOpen(false)}>
                     Request Demo
                   </Link>

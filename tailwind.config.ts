@@ -51,13 +51,18 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        "nexrova-blue": {
-          DEFAULT: "hsl(var(--nexrova-blue))",
-          dark: "hsl(var(--nexrova-blue-dark))",
+        // Premium SaaS Hospitality Palette
+        "nexrova": {
+          navy: "#0A2540",
+          cyan: "#00CFFF", 
+          gold: "#C89B3C",
+          white: "#FFFFFF",
+          "soft-gray": "#F5F6FA",
+          charcoal: "#111827",
+          "medium-gray": "#6B7280",
         },
-        "nexrova-gray": {
-          dark: "hsl(var(--nexrova-gray-dark))",
-          light: "hsl(var(--nexrova-gray-light))",
+        "gradient": {
+          "cyan-purple": "linear-gradient(90deg, #00CFFF, #6A00F5)",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
