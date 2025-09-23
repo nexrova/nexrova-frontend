@@ -12,7 +12,6 @@ import {
   ArrowRight,
   CheckCircle,
   Star,
-  Users,
   Zap
 } from 'lucide-react';
 import heroBackground from '@/assets/hero-background.jpg';
@@ -42,27 +41,6 @@ const Index = () => {
       title: "Fraud Detection & IoT Security",
       description: "Advanced security monitoring for smart locks, sensors, and payment systems to protect guests and property.",
       gradient: "from-red-500 to-red-600"
-    }
-  ];
-
-  const testimonials = [
-    {
-      quote: "Nexrova transformed our guest experience and reduced operational costs by 40%. The AI handles routine requests perfectly, freeing our staff for personal service.",
-      author: "Sarah Johnson",
-      role: "General Manager",
-      company: "Grand Pacific Resort"
-    },
-    {
-      quote: "The automated upselling feature increased our ancillary revenue by 25% in the first quarter. Guests love the personalized recommendations.",
-      author: "Michael Chen",
-      role: "Revenue Manager", 
-      company: "Urban Boutique Hotels"
-    },
-    {
-      quote: "Implementation was seamless and the ROI was immediate. Our guest satisfaction scores have never been higher.",
-      author: "Lisa Rodriguez",
-      role: "Operations Director",
-      company: "Mountain View Lodge"
     }
   ];
 
@@ -133,42 +111,6 @@ const Index = () => {
                         {feature.description}
                       </p>
                     </div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      <section className="py-24 section-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl font-bold text-navy mb-6">
-              Trusted by Leading Hotels Worldwide
-            </h2>
-            <p className="text-xl text-medium-gray max-w-2xl mx-auto">
-              See how Nexrova is transforming hotel operations across the globe
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <Card key={index} className="shadow-card hover-lift transition-smooth section-white">
-                <CardContent className="p-8">
-                  <div className="flex items-center gap-1 mb-4">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="h-5 w-5 fill-nexrova-gold text-nexrova-gold" />
-                    ))}
-                  </div>
-                  <blockquote className="text-medium-gray mb-6 leading-relaxed">
-                    "{testimonial.quote}"
-                  </blockquote>
-                  <div>
-                    <div className="font-semibold text-navy">{testimonial.author}</div>
-                    <div className="text-sm text-nexrova-cyan">{testimonial.role}</div>
-                    <div className="text-sm text-medium-gray">{testimonial.company}</div>
                   </div>
                 </CardContent>
               </Card>
