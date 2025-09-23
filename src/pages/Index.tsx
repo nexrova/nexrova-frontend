@@ -2,7 +2,7 @@ import React from 'react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 import { Link } from 'react-router-dom';
 import { 
   MessageCircle, 
@@ -13,7 +13,6 @@ import {
   CheckCircle,
   Star,
   Users,
-  BarChart3,
   Zap
 } from 'lucide-react';
 import heroBackground from '@/assets/hero-background.jpg';
@@ -44,13 +43,6 @@ const Index = () => {
       description: "Advanced security monitoring for smart locks, sensors, and payment systems to protect guests and property.",
       gradient: "from-red-500 to-red-600"
     }
-  ];
-
-  const stats = [
-    { number: "35%", label: "Cost Reduction", icon: BarChart3 },
-    { number: "500+", label: "Hotels Served", icon: Users },
-    { number: "4.9★", label: "Customer Rating", icon: Star },
-    { number: "24/7", label: "AI Support", icon: Zap }
   ];
 
   const testimonials = [
@@ -110,23 +102,6 @@ const Index = () => {
         <div className="absolute top-1/4 left-10 w-20 h-20 bg-nexrova-cyan/20 rounded-full blur-xl"></div>
         <div className="absolute bottom-1/4 right-10 w-32 h-32 bg-purple-500/20 rounded-full blur-xl"></div>
         <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-nexrova-gold/20 rounded-full blur-xl"></div>
-      </section>
-
-      {/* Stats Section */}
-      <section className="py-16 section-white relative -mt-16 mx-4 sm:mx-8 lg:mx-16 rounded-2xl shadow-elegant z-20">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
-            {stats.map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="inline-flex items-center justify-center w-12 h-12 bg-nexrova-cyan/10 rounded-full mb-3 hover-glow-cyan transition-glow">
-                  <stat.icon className="h-6 w-6 text-nexrova-cyan" />
-                </div>
-                <div className="text-2xl lg:text-3xl font-bold text-navy mb-1">{stat.number}</div>
-                <div className="text-sm text-medium-gray uppercase tracking-wide">{stat.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
       </section>
 
       {/* Features Section */}
@@ -291,3 +266,4 @@ const Index = () => {
 };
 
 export default Index;
+
