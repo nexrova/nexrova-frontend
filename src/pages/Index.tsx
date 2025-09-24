@@ -177,7 +177,7 @@ const Index = () => {
       {/* CTA Section */}
       <section className="py-24 section-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <Card className="section-navy text-white text-center shadow-elegant overflow-hidden hover-lift transition-smooth">
+          <Card className="bg-gray-900 text-white text-center shadow-elegant overflow-hidden hover-lift transition-smooth">
             <CardContent className="py-20 px-8 relative">
               <div className="absolute inset-0 bg-gradient-to-r from-nexrova-cyan/20 to-transparent"></div>
               <div className="relative z-10">

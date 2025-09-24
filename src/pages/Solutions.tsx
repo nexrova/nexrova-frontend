@@ -171,9 +171,9 @@ const Solutions = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20">
+      {/* <section className="py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <Card className="gradient-hero text-white text-center shadow-elegant">
+          <Card className="bg-gray-900 text-white text-center shadow-elegant">
             <CardContent className="py-16 px-8">
               <h2 className="text-3xl sm:text-4xl font-bold mb-4">
                 Ready to Transform Your Hotel?
@@ -192,8 +192,42 @@ const Solutions = () => {
             </CardContent>
           </Card>
         </div>
-      </section>
+      </section> */}
+      {/* CTA Section */}
+      {/* CTA Section */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <Card className="bg-gray-900 text-white text-center shadow-elegant overflow-hidden hover-lift transition-smooth relative">
+            <CardContent className="py-16 px-8 relative">
+              {/* Cyan overlay */}
+              <div className="absolute inset-0 bg-gradient-to-r from-nexrova-cyan/20 to-transparent"></div>
 
+              {/* Content on top of overlay */}
+              <div className="relative z-10">
+                <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+                  Ready to Transform Your Hotel?
+                </h2>
+                <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+                  Join leading hotels worldwide who trust Nexrova to enhance their operations and guest experience.
+                </p>
+                <div className="space-x-4">
+                  <Button asChild size="lg" variant="secondary">
+                    <Link to="/request-demo">Request Demo</Link>
+                  </Button>
+                  <Button
+                    asChild
+                    size="lg"
+                    variant="outline"
+                    className="border-white text-gray-300 hover:bg-white hover:text-gray-900"
+                  >
+                    <Link to="/contact">Contact Sales</Link>
+                  </Button>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
       <Footer />
     </div>
   );
