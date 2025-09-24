@@ -274,12 +274,12 @@ const Contact = () => {
       {/* CTA Section */}
       <section className="py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <Card className="gradient-hero text-white text-center shadow-elegant">
+          <Card className="shadow-elegant text-center">
             <CardContent className="py-16 px-8">
-              <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+              <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-foreground">
                 Ready to See Nexrova in Action?
               </h2>
-              <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+              <p className="text-xl mb-8 max-w-2xl mx-auto text-muted-foreground">
                 Schedule a personalized demo and see how our AI solutions can transform your hotel operations.
               </p>
               <Button asChild size="lg" variant="secondary">
