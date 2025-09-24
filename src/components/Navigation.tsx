@@ -98,122 +98,202 @@
 
 // export default Navigation;
 
-import React, { useState } from 'react';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { Button } from '@/components/ui/button';
-import { useIsMobile } from '@/hooks/use-mobile';
-import { Home, Layers, Info, Briefcase, Phone } from 'lucide-react';
+// import React, { useState } from 'react';
+// import { Link, useLocation, useNavigate } from 'react-router-dom';
+// import { Button } from '@/components/ui/button';
+// import { Home, Layers, Info, Briefcase, Phone } from 'lucide-react';
 
-interface NavItem {
-  label: string;
-  path: string;
-  icon: React.ReactNode;
-}
+// interface NavItem {
+//   label: string;
+//   path: string;
+//   icon: React.ReactNode;
+// }
 
-const navItems: NavItem[] = [
-  { label: 'Home', path: '/', icon: <Home size={24} /> },
-  { label: 'Solutions', path: '/solutions', icon: <Layers size={24} /> },
-  { label: 'About', path: '/about', icon: <Info size={24} /> },
-  { label: 'Careers', path: '/careers', icon: <Briefcase size={24} /> },
-  { label: 'Contact', path: '/contact', icon: <Phone size={24} /> },
+// const navItems: NavItem[] = [
+//   { label: 'Home', path: '/', icon: <Home size={24} /> },
+//   { label: 'Solutions', path: '/solutions', icon: <Layers size={24} /> },
+//   { label: 'About', path: '/about', icon: <Info size={24} /> },
+//   { label: 'Careers', path: '/careers', icon: <Briefcase size={24} /> },
+//   { label: 'Contact', path: '/contact', icon: <Phone size={24} /> },
+// ];
+
+// const Navigation = () => {
+//   const [isMenuOpen, setIsMenuOpen] = useState(false);
+//   const location = useLocation();
+//   const navigate = useNavigate();
+
+//   const isActive = (path: string) => location.pathname === path;
+
+//   return (
+//     <nav className="bg-nexrova-navy backdrop-blur-md border-b border-nexrova-soft-gray sticky top-0 z-50">
+//       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+//         <div className="flex justify-between items-center h-16">
+//           {/* Hamburger Icon */}
+//           <button
+//             onClick={() => setIsMenuOpen(true)}
+//             className="text-white text-2xl hover:text-nexrova-cyan transition-colors"
+//           >
+//             ☰
+//           </button>
+
+//           {/* Logo + Name */}
+//           <Link to="/" className="flex items-center space-x-2">
+//             <div className="w-8 h-8 gradient-cyan-purple rounded-lg flex items-center justify-center shadow-cyan">
+//               <span className="text-white font-bold text-lg">N</span>
+//             </div>
+//             <span className="font-bold text-xl text-white relative">
+//               Nexrova
+//               <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-nexrova-gold"></div>
+//             </span>
+//           </Link>
+
+//           {/* Request Demo Button */}
+//           <Button asChild className="btn-gradient">
+//             <Link to="/request-demo">Request Demo</Link>
+//           </Button>
+//         </div>
+//       </div>
+
+//       {/* Overlay Menu (for both mobile and desktop) */}
+//       {isMenuOpen && (
+//         <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex flex-col items-center justify-center p-6 space-y-6">
+//           {/* Close Button */}
+//           <button
+//             onClick={() => setIsMenuOpen(false)}
+//             className="absolute top-6 right-6 text-white text-3xl font-bold hover:text-nexrova-cyan transition-colors"
+//           >
+//             ×
+//           </button>
+
+//           {/* Nav Cards */}
+//           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-3xl">
+//             {navItems.map((item) => (
+//               <div
+//                 key={item.path}
+//                 onClick={() => {
+//                   navigate(item.path);
+//                   setIsMenuOpen(false);
+//                 }}
+//                 className={`flex flex-col items-center justify-center p-6 rounded-2xl cursor-pointer transition-all duration-300
+//                   ${isActive(item.path) ? 'bg-nexrova-cyan/30 text-white shadow-lg' : 'bg-white/10 text-white hover:bg-nexrova-cyan/20'}`}
+//               >
+//                 <div className="mb-2">{item.icon}</div>
+//                 <span className="font-semibold text-lg">{item.label}</span>
+//               </div>
+//             ))}
+//           </div>
+
+//           {/* Optional: Request Demo button in overlay */}
+//           <Button asChild className="mt-6 w-full max-w-xs btn-gradient">
+//             <Link to="/request-demo" onClick={() => setIsMenuOpen(false)}>
+//               Request Demo
+//             </Link>
+//           </Button>
+//         </div>
+//       )}
+//     </nav>
+//   );
+// };
+
+// export default Navigation;
+
+// import CardNav from './CardNav';
+// import logo from '../assets/logo.svg'; // adjust path to your logo
+
+// const navItems = [
+//   {
+//     label: "Solutions",
+//     bgColor: "#0D0716",
+//     textColor: "#fff",
+//     links: [
+//       { label: "AI Solutions", ariaLabel: "AI Solutions" },
+//       { label: "Features", ariaLabel: "Features" }
+//     ]
+//   },
+//   {
+//     label: "About",
+//     bgColor: "#170D27",
+//     textColor: "#fff",
+//     links: [
+//       { label: "Company", ariaLabel: "Company" },
+//       { label: "Careers", ariaLabel: "Careers" }
+//     ]
+//   },
+//   {
+//     label: "Contact",
+//     bgColor: "#271E37",
+//     textColor: "#fff",
+//     links: [
+//       { label: "Email", ariaLabel: "Email" },
+//       { label: "Twitter", ariaLabel: "Twitter" }
+//     ]
+//   }
+// ];
+
+// export default function Navigation() {
+//   return (
+//     <CardNav
+//       logo={logo}
+//       items={navItems}
+//       baseColor="#fff"
+//       menuColor="#000"
+//       buttonBgColor="#111"
+//       buttonTextColor="#fff"
+//     />
+//   );
+// }
+
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import CardNav, { CardNavItem } from './CardNav';
+import logo from '../assets/logo.svg'; // make sure the path to your logo is correct
+
+const navItems: CardNavItem[] = [
+  {
+    label: 'Home',
+    bgColor: '#0D0716',
+    textColor: '#fff',
+    links: [{ label: 'Home', ariaLabel: 'Home Page', href: '/' }]
+  },
+  {
+    label: 'Solutions',
+    bgColor: '#170D27',
+    textColor: '#fff',
+    links: [
+      { label: 'AI Solutions', ariaLabel: 'AI Solutions Page', href: '/solutions' },
+      { label: 'Features', ariaLabel: 'Features Page', href: '/solutions#features' }
+    ]
+  },
+  {
+    label: 'About',
+    bgColor: '#271E37',
+    textColor: '#fff',
+    links: [
+      { label: 'Company', ariaLabel: 'Company Page', href: '/about' },
+      { label: 'Careers', ariaLabel: 'Careers Page', href: '/careers' }
+    ]
+  },
+  {
+    label: 'Contact',
+    bgColor: '#3A2C4B',
+    textColor: '#fff',
+    links: [{ label: 'Contact', ariaLabel: 'Contact Page', href: '/contact' }]
+  }
 ];
 
-const Navigation = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const location = useLocation();
+export default function Navigation() {
   const navigate = useNavigate();
-  const isMobile = useIsMobile();
-
-  const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className="bg-nexrova-navy backdrop-blur-md border-b border-nexrova-soft-gray sticky top-0 z-50">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 gradient-cyan-purple rounded-lg flex items-center justify-center shadow-cyan">
-              <span className="text-white font-bold text-lg">N</span>
-            </div>
-            <span className="font-bold text-xl text-white relative">
-              Nexrova
-              <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-nexrova-gold"></div>
-            </span>
-          </Link>
-
-          {/* Desktop Nav */}
-          {!isMobile && (
-            <div className="flex items-center space-x-6">
-              {navItems.map((item) => (
-                <div
-                  key={item.path}
-                  onClick={() => navigate(item.path)}
-                  className={`flex flex-col items-center justify-center px-4 py-2 rounded-xl cursor-pointer transition-all duration-300
-                    ${isActive(item.path) ? 'bg-nexrova-cyan/20 text-white shadow-md' : 'text-white hover:bg-nexrova-cyan/10'}`}
-                >
-                  <div className="mb-1">{item.icon}</div>
-                  <span className="text-sm font-medium">{item.label}</span>
-                </div>
-              ))}
-              <Button asChild className="ml-4 btn-gradient">
-                <Link to="/request-demo">Request Demo</Link>
-              </Button>
-            </div>
-          )}
-
-          {/* Mobile hamburger */}
-          {isMobile && (
-            <Button
-              variant="ghost"
-              size="sm"
-              onClick={() => setIsMenuOpen(true)}
-              className="text-white hover:text-nexrova-cyan"
-            >
-              <span className="text-2xl">☰</span>
-            </Button>
-          )}
-        </div>
-      </div>
-
-      {/* Mobile CardNav Overlay */}
-      {isMobile && isMenuOpen && (
-        <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex flex-col items-center justify-center p-6 space-y-6">
-          {/* Close Button */}
-          <button
-            onClick={() => setIsMenuOpen(false)}
-            className="absolute top-6 right-6 text-white text-3xl font-bold hover:text-nexrova-cyan transition-colors"
-          >
-            ×
-          </button>
-
-          {/* Nav Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full max-w-md">
-            {navItems.map((item) => (
-              <div
-                key={item.path}
-                onClick={() => {
-                  navigate(item.path);
-                  setIsMenuOpen(false);
-                }}
-                className={`flex flex-col items-center justify-center p-6 rounded-2xl cursor-pointer transition-all duration-300
-                  ${isActive(item.path) ? 'bg-nexrova-cyan/30 text-white shadow-lg' : 'bg-white/10 text-white hover:bg-nexrova-cyan/20'}`}
-              >
-                <div className="mb-2">{item.icon}</div>
-                <span className="font-semibold text-lg">{item.label}</span>
-              </div>
-            ))}
-          </div>
-
-          {/* Request Demo Button */}
-          <Button asChild className="mt-6 w-full max-w-xs btn-gradient">
-            <Link to="/request-demo" onClick={() => setIsMenuOpen(false)}>
-              Request Demo
-            </Link>
-          </Button>
-        </div>
-      )}
-    </nav>
+    <CardNav
+      logo={logo}
+      logoAlt="Nexrova Logo"
+      items={navItems}
+      baseColor="#fff"
+      menuColor="#000"
+      buttonBgColor="#111"
+      buttonTextColor="#fff"
+    />
   );
-};
+}
 
-export default Navigation;
