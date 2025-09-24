@@ -83,7 +83,7 @@ const Solutions = () => {
               <span className="gradient-text">AI Solutions</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              Nexrova's comprehensive AI platform reduces operational costs by up to 35% 
+              Nexrova's comprehensive AI platform reduces operational costs by up to potentially 35% 
               while enhancing guest satisfaction through intelligent automation and personalized service.
             </p>
             <Button asChild size="lg" className="mr-4">
