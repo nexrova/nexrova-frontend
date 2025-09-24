@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Facebook, Twitter, Linkedin, Mail } from 'lucide-react';
+import yourLogo from '@/assets/logo.png'; // adjust path
+
 
 const Footer = () => {
   const handleNewsletterSubmit = (e: React.FormEvent) => {
@@ -16,11 +18,21 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-2">
+            {/* <div className="flex items-center space-x-2">
               <div className="w-8 h-8 gradient-cyan-purple rounded-lg flex items-center justify-center shadow-cyan">
                 <span className="text-white font-bold text-lg">N</span>
               </div>
               <span className="font-bold text-xl relative">
+                Nexrova
+                <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-nexrova-gold"></div>
+              </span>
+            </div> */}
+            <div className="flex items-center space-x-2">
+            {/* PNG logo */}
+              <img src={yourLogo} alt="Nexrova Logo" className="h-8 w-auto" />
+
+              {/* Company name */}
+              <span className="font-bold text-xl relative text-white">
                 Nexrova
                 <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-nexrova-gold"></div>
               </span>
@@ -90,7 +102,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="border-t border-nexrova-soft-gray mt-8 pt-8 flex flex-col sm:flex-row justify-between items-center">
           <p className="text-gray-300 text-sm">
-            © 2024 Nexrova. All rights reserved.
+            © 2025 Nexrova. All rights reserved.
           </p>
           
           {/* Social Links */}
