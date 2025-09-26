@@ -175,7 +175,7 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 section-white">
+      {/* <section className="py-24 section-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <Card className="bg-gray-900 text-white text-center shadow-elegant overflow-hidden hover-lift transition-smooth">
             <CardContent className="py-20 px-8 relative">
@@ -200,7 +200,35 @@ const Index = () => {
             </CardContent>
           </Card>
         </div>
+      </section> */}
+      {/* CTA Section */}
+      <section className="py-24 section-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <Card className="bg-black text-white text-center shadow-elegant overflow-hidden hover-lift transition-smooth">
+            <CardContent className="py-20 px-8 relative">
+              <div className="absolute inset-0 bg-gradient-to-r from-nexrova-cyan/20 to-transparent"></div>
+              <div className="relative z-10">
+                <h2 className="text-4xl sm:text-5xl font-bold mb-6">
+                  Ready to Transform Your Hotel?
+                </h2>
+                <p className="text-xl mb-10 opacity-90 max-w-3xl mx-auto leading-relaxed">
+                  Join hundreds of hotels worldwide who trust Nexrova to enhance their operations 
+                  and deliver exceptional guest experiences through AI automation.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <Button asChild size="lg" className="bg-white text-black text-lg px-8 py-4 hover:bg-gray-200">
+                    <Link to="/request-demo">Request Demo</Link>
+                  </Button>
+                  <Button asChild size="lg" className="border border-white text-white text-lg px-8 py-4 hover:bg-white hover:text-black">
+                    <Link to="/contact">Contact Sales</Link>
+                  </Button>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
       </section>
+
 
       <Footer />
     </div>

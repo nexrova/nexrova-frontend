@@ -197,7 +197,7 @@ const Solutions = () => {
       {/* CTA Section */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <Card className="bg-gray-900 text-white text-center shadow-elegant overflow-hidden hover-lift transition-smooth relative">
+          <Card className="bg-black text-white text-center shadow-elegant overflow-hidden hover-lift transition-smooth relative">
             <CardContent className="py-16 px-8 relative">
               {/* Cyan overlay */}
               <div className="absolute inset-0 bg-gradient-to-r from-nexrova-cyan/20 to-transparent"></div>
