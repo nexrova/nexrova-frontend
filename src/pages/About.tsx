@@ -250,23 +250,23 @@ const About = () => {
   const team = [
     {
       name: "Jeevan Suresh",
-      role: "CEO & Co-founder",
-      bio: "Former VP of Engineering at Expedia with 15+ years in hospitality technology.",
+      role: "CEO & Founder",
+      bio: "Undergrad student at Vellore Institute of Technology, Chennai.",
     },
     {
       name: "Subrat Das",
       role: "Co-founder",
-      bio: "AI researcher and former Tesla autonomy engineer with expertise in machine learning systems.",
+      bio: "Undergrad student at Sathyabama Institute of Science and Technology, Chennai.",
     },
     {
       name: "Stuti Swaminathan",
       role: "Software and Market Research Intern",
-      bio: "PhD in Computer Science from Stanford, specializing in natural language processing and conversational AI.",
+      bio: "Undergrad student at Vellore Institute of Technology, Chennai.",
     },
     {
       name: "Aaron George Varghese",
       role: "AI Backend Intern",
-      bio: "20+ years in hospitality sales, formerly at Salesforce and Oracle Hospitality.",
+      bio: "Undergrad student at Vellore Institute of Technology, Chennai.",
     }
   ];
 
@@ -344,7 +344,7 @@ const About = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">Meet Our Team</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Industry experts and technology innovators working together to transform hospitality
+              Students working together to transform hospitality
             </p>
           </div>
           
@@ -378,10 +378,10 @@ const About = () => {
               We're always looking for talented individuals to help us revolutionize the hospitality industry.
             </p>
             <div className="space-x-4">
-              <Button asChild size="lg">
+              {/* <Button asChild size="lg">
                 <Link to="/careers">View Open Positions</Link>
-              </Button>
-              <Button asChild variant="outline" size="lg">
+              </Button> */}
+              <Button asChild size="lg">
                 <Link to="/request-demo">See Our Solution</Link>
               </Button>
             </div>
