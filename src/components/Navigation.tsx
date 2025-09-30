@@ -493,7 +493,7 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <img src={logo} alt="Nexrova Logo" className="h-8 w-auto" />
+            <img src={logo} alt="Nexrova Logo" className="h-12 w-auto" />
             <span className="font-bold text-xl text-black relative">
               Nexrova
               <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-black"></div>

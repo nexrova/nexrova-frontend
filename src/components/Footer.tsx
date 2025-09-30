@@ -137,7 +137,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <img src={yourLogo} alt="Nexrova Logo" className="h-8 w-auto" />
+              <img src={yourLogo} alt="Nexrova Logo" className="h-12 w-auto" />
               <span className="font-bold text-xl relative">
                 Nexrova
                 <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-black"></div>
