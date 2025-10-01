@@ -682,11 +682,12 @@ const Index = () => {
       {/* Hero Section */}
       <section className="relative py-32 overflow-hidden section-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-8 leading-tight text-navy">
-            Transform Your Hotel with <span className="gradient-text">AI Automation</span>
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-8 leading-snug text-navy">
+            AI-Powered Guest Assistance Platform <br />
+            <span className="gradient-text">Prevent Fraud, Protect Revenue</span>
           </h1>
           <p className="text-xl sm:text-2xl mb-12 leading-relaxed text-charcoal max-w-3xl mx-auto">
-            Reduce operational costs by 35% while enhancing guest satisfaction with our comprehensive AI-powered hotel automation platform.
+            AI driven platform that protects your revenue, prevents fraud across Finance, Front Desk, Kitchen, and Inventory, enhances the guest experience, and reduces operational costs by up to 35%.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="text-lg px-8 py-4 btn-gradient hover-glow-cyan">
