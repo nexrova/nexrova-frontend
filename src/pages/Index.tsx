@@ -682,10 +682,18 @@ const Index = () => {
       {/* Hero Section */}
       <section className="relative py-32 overflow-hidden section-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-8 leading-snug text-navy">
+          {/* <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-8 leading-snug text-navy">
             AI-Powered Guest Assistance Platform <br />
             <span className="gradient-text">Prevent Fraud, Protect Revenue</span>
+          </h1> */}
+          <h1
+            className="animate-fade-up text-4xl sm:text-5xl lg:text-6xl font-bold mb-8 leading-snug text-navy"
+            style={{ fontFamily: "'Orbitron', sans-serif" }} // or 'Bitcount Grid Single Ink' if you have it
+          >
+            AI-Powered Guest Assistance Platform <br />
+            <span className="glow-gradient-text">Prevent Fraud, Protect Revenue</span>
           </h1>
+
           <p className="text-xl sm:text-2xl mb-12 leading-relaxed text-charcoal max-w-3xl mx-auto">
             AI driven platform that protects your revenue, prevents fraud across Finance, Front Desk, Kitchen, and Inventory, enhances the guest experience, and reduces operational costs by up to 35%.
           </p>
@@ -754,7 +762,7 @@ const Index = () => {
                 </Button>
               </div>
             </div>
-            <div className="lg:pl-8">
+            {/* <div className="lg:pl-8">
               <Card className="shadow-elegant overflow-hidden hover-lift transition-smooth">
                 <CardContent className="p-0">
                   <div className="aspect-square bg-gradient-to-br from-nexrova-cyan/20 via-purple-500/10 to-nexrova-cyan/5 flex items-center justify-center">
@@ -762,6 +770,19 @@ const Index = () => {
                       <Workflow className="h-24 w-24 text-nexrova-cyan/60 mx-auto mb-4" />
                       <p className="text-lg font-medium text-medium-gray">AI-Powered Operations</p>
                     </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div> */}
+            <div className="lg:pl-8">
+              <Card className="shadow-elegant overflow-hidden hover-lift transition-smooth">
+                <CardContent className="p-0">
+                  <div className="aspect-square bg-gradient-to-br from-nexrova-cyan/20 via-purple-500/10 to-nexrova-cyan/5 flex items-center justify-center">
+                    <img
+                      src="/src/assets/logo.png"
+                      alt="Nexrova Logo"
+                      className="h-75 w-auto object-contain mx-auto"
+                    />
                   </div>
                 </CardContent>
               </Card>
