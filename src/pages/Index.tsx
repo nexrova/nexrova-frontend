@@ -658,6 +658,7 @@ import { Link } from 'react-router-dom';
 import TiltedCard from '@/components/TiltedCard';
 import { ArrowRight, MessageCircle, TrendingUp, Workflow, Shield, CheckCircle } from 'lucide-react';
 
+
 const Index = () => {
   const features = [
     { icon: MessageCircle, title: "AI-Powered Guest Interactions", description: "Seamless chat, voice, and WhatsApp integration for 24/7 guest support with intelligent responses and personalized service." },
@@ -698,12 +699,14 @@ const Index = () => {
             AI driven platform that protects your revenue, prevents fraud across Finance, Front Desk, Kitchen, and Inventory, enhances the guest experience, and reduces operational costs by up to 35%.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" className="text-lg px-8 py-4 btn-gradient hover-glow-cyan">
+            {/* <Button asChild size="lg" className="text-lg px-8 py-4 btn-gradient hover-glow-cyan"> */}
+            <Button asChild size="lg" className="text-lg px-8 py-4 glow-btn bg-black text-white">
               <Link to="/request-demo">
                 Request Demo <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
-            <Button asChild size="lg" className="text-lg px-8 py-4 btn-gold hover-glow-gold">
+            {/* <Button asChild size="lg" className="text-lg px-8 py-4 btn-gold hover-glow-gold"> */}
+            <Button asChild size="lg" className="text-lg px-8 py-4 glow-btn bg-black text-white">
               <Link to="/solutions">Explore Solutions</Link>
             </Button>
           </div>
@@ -841,4 +844,5 @@ const Index = () => {
 };
 
 export default Index;
+
 

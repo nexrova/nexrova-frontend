@@ -800,10 +800,12 @@ const Solutions = () => {
               Hotels lose 7–17% of annual revenue to fraud, mostly in Finance, Front Desk, Kitchen, and Inventory accounting for 70–80% of all losses. Nexrova’s AI-powered guest assistance platform targets these high-risk areas, stopping revenue leakage through automated guest verification, secure payments, staff fraud prevention, and inventory protection all while acting as a smart digital receptionist.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild className="text-lg px-8 py-4 btn-gradient hover-glow-cyan">
+              {/* <Button asChild className="text-lg px-8 py-4 btn-gradient hover-glow-cyan"> */}
+              <Button asChild className="text-lg px-8 py-4 glow-btn bg-black text-white">
                 <Link to="/request-demo">Request Demo</Link>
               </Button>
-              <Button asChild className="text-lg px-8 py-4 btn-gold hover-glow-gold">
+              {/* <Button asChild className="text-lg px-8 py-4 btn-gold hover-glow-gold"> */}
+              <Button asChild className="text-lg px-8 py-4 glow-btn bg-black text-white">
                 <Link to="/contact">Contact Sales</Link>
               </Button>
             </div>

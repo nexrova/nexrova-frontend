@@ -170,6 +170,57 @@
   .shadow-card {
     box-shadow: var(--shadow-card);
   }
+/* Futuristic Glow Button */
+.glow-btn {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border-radius: 0.75rem; /* same as your other buttons */
+  padding: 1rem 2rem;     /* ensures consistent size */
+  font-weight: 500;
+}
+
+.glow-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(135deg, #00f6ff, #a855f7, #3b82f6, #00f6ff);
+  background-size: 400% 400%;
+  filter: blur(4px);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+  animation: glowAnimation 6s linear infinite;
+  z-index: -1;
+}
+
+.glow-btn:hover::before {
+  filter: blur(12px);
+  opacity: 1;
+}
+
+.glow-btn > a {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Glow Animation Keyframes */
+@keyframes glowAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
 }
 @keyframes gradientFlow {
   0% {

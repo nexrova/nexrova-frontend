@@ -381,7 +381,8 @@ const About = () => {
               {/* <Button asChild size="lg">
                 <Link to="/careers">View Open Positions</Link>
               </Button> */}
-              <Button asChild size="lg">
+              {/* <Button asChild size="lg"> */}
+              <Button asChild size="lg" className="glow-btn bg-black text-white">
                 <Link to="/request-demo">See Our Solution</Link>
               </Button>
             </div>
