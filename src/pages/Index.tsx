@@ -649,6 +649,202 @@
 // export default Index;
 
 
+// import React from 'react';
+// import Navigation from '@/components/Navigation';
+// import Footer from '@/components/Footer';
+// import { Button } from '@/components/ui/button';
+// import { Card, CardContent } from '@/components/ui/card';
+// import { Link } from 'react-router-dom';
+// import TiltedCard from '@/components/TiltedCard';
+// import { ArrowRight, MessageCircle, TrendingUp, Workflow, Shield, CheckCircle } from 'lucide-react';
+
+
+// const Index = () => {
+//   const features = [
+//     { icon: MessageCircle, title: "AI-Powered Guest Interactions", description: "Seamless chat, voice, and WhatsApp integration for 24/7 guest support with intelligent responses and personalized service." },
+//     { icon: TrendingUp, title: "Automated Upselling", description: "Smart recommendations for meals, spa services, and late checkouts that increase revenue while enhancing guest experience." },
+//     { icon: Workflow, title: "Agentic AI Workflows", description: "Streamlined automation for housekeeping schedules, booking management, and complaint resolution processes." },
+//     { icon: Shield, title: "Fraud Detection & IoT Security", description: "Advanced security monitoring for smart locks, sensors, and payment systems to protect guests and property." }
+//   ];
+
+//   const benefits = [
+//     "Reduce operational costs by up to 35%",
+//     "Increase guest satisfaction scores by 25%", 
+//     "Boost ancillary revenue through smart upselling",
+//     "24/7 AI-powered guest support",
+//     "Enterprise-grade security and compliance",
+//     "Seamless integration with existing systems"
+//   ];
+
+//   return (
+//     <div className="min-h-screen bg-background">
+//       <Navigation />
+
+//       {/* Hero Section */}
+//       <section className="relative py-32 overflow-hidden section-white">
+//         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+//           {/* <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-8 leading-snug text-navy">
+//             AI-Powered Guest Assistance Platform <br />
+//             <span className="gradient-text">Prevent Fraud, Protect Revenue</span>
+//           </h1> */}
+//           <h1
+//             className="animate-fade-up text-4xl sm:text-5xl lg:text-6xl font-bold mb-8 leading-snug text-navy"
+//             style={{ fontFamily: "'Orbitron', sans-serif" }} // or 'Bitcount Grid Single Ink' if you have it
+//           >
+//             AI-Powered Guest Assistance Platform <br />
+//             <span className="glow-gradient-text">Prevent Fraud, Protect Revenue</span>
+//           </h1>
+
+//           <p className="text-xl sm:text-2xl mb-12 leading-relaxed text-charcoal max-w-3xl mx-auto">
+//             AI driven platform that protects your revenue, prevents fraud across Finance, Front Desk, Kitchen, and Inventory, enhances the guest experience, and reduces operational costs by up to 35%.
+//           </p>
+//           <div className="flex flex-col sm:flex-row gap-4 justify-center">
+//             {/* <Button asChild size="lg" className="text-lg px-8 py-4 btn-gradient hover-glow-cyan"> */}
+//             <Button asChild size="lg" className="text-lg px-8 py-4 glow-btn bg-black text-white">
+//               <Link to="/request-demo">
+//                 Request Demo <ArrowRight className="ml-2 h-5 w-5" />
+//               </Link>
+//             </Button>
+//             {/* <Button asChild size="lg" className="text-lg px-8 py-4 btn-gold hover-glow-gold"> */}
+//             <Button asChild size="lg" className="text-lg px-8 py-4 glow-btn bg-black text-white">
+//               <Link to="/solutions">Explore Solutions</Link>
+//             </Button>
+//           </div>
+//         </div>
+//       </section>
+
+//       {/* Features Section */}
+//       <section className="py-24 section-soft-gray">
+//         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+//           <div className="text-center mb-16">
+//             <h2 className="text-4xl sm:text-5xl font-bold text-navy mb-6">Complete Hotel Automation Suite</h2>
+//             <p className="text-xl text-medium-gray max-w-3xl mx-auto leading-relaxed">
+//               Our AI platform integrates seamlessly with your existing systems to deliver intelligent automation across every aspect of hotel operations.
+//             </p>
+//           </div>
+//           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+//             {features.map((feature, index) => (
+//               <Card key={index} className="group shadow-card hover-lift transition-all duration-500 overflow-hidden border-0 section-white">
+//                 <CardContent className="p-8">
+//                   <div className="flex items-start gap-6">
+//                     <div className="flex-shrink-0 w-16 h-16 gradient-cyan-purple rounded-2xl flex items-center justify-center shadow-cyan hover-glow-cyan transition-glow">
+//                       <feature.icon className="h-8 w-8 text-white" />
+//                     </div>
+//                     <div className="flex-1">
+//                       <h3 className="text-xl font-bold text-navy mb-3 group-hover:text-nexrova-cyan transition-colors">{feature.title}</h3>
+//                       <p className="text-medium-gray leading-relaxed">{feature.description}</p>
+//                     </div>
+//                   </div>
+//                 </CardContent>
+//               </Card>
+//             ))}
+//           </div>
+//         </div>
+//       </section>
+
+//       {/* Benefits Section */}
+//       <section className="py-24 section-soft-gray">
+//         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+//           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+//             <div className="space-y-8">
+//               <h2 className="text-4xl sm:text-5xl font-bold text-navy mb-6">Why Choose Nexrova?</h2>
+//               <p className="text-xl text-medium-gray leading-relaxed">
+//                 Our AI platform delivers measurable results that transform both operations and guest experience.
+//               </p>
+//               <div className="space-y-4">
+//                 {benefits.map((benefit, idx) => (
+//                   <div key={idx} className="flex items-center gap-4">
+//                     <CheckCircle className="h-6 w-6 text-nexrova-cyan flex-shrink-0" />
+//                     <span className="text-lg text-medium-gray">{benefit}</span>
+//                   </div>
+//                 ))}
+//               </div>
+//               <div className="pt-4">
+//                 <Button asChild size="lg" className="btn-gradient hover-glow-cyan">
+//                   <Link to="/solutions">Learn More About Our Solutions <ArrowRight className="ml-2 h-5 w-5" /></Link>
+//                 </Button>
+//               </div>
+//             </div>
+//             {/* <div className="lg:pl-8">
+//               <Card className="shadow-elegant overflow-hidden hover-lift transition-smooth">
+//                 <CardContent className="p-0">
+//                   <div className="aspect-square bg-gradient-to-br from-nexrova-cyan/20 via-purple-500/10 to-nexrova-cyan/5 flex items-center justify-center">
+//                     <div className="text-center">
+//                       <Workflow className="h-24 w-24 text-nexrova-cyan/60 mx-auto mb-4" />
+//                       <p className="text-lg font-medium text-medium-gray">AI-Powered Operations</p>
+//                     </div>
+//                   </div>
+//                 </CardContent>
+//               </Card>
+//             </div> */}
+//             <div className="lg:pl-8">
+//               <Card className="shadow-elegant overflow-hidden hover-lift transition-smooth">
+//                 <CardContent className="p-0">
+//                   <div className="aspect-square bg-gradient-to-br from-nexrova-cyan/20 via-purple-500/10 to-nexrova-cyan/5 flex items-center justify-center">
+//                     <img
+//                       src="/src/assets/logo.png"
+//                       alt="Nexrova Logo"
+//                       className="h-75 w-auto object-contain mx-auto"
+//                     />
+//                   </div>
+//                 </CardContent>
+//               </Card>
+//             </div>
+//           </div>
+//         </div>
+//       </section>
+
+//       {/* CTA Tilted Card Section with dark semi-visible bg */}
+//       <section className="py-24 section-white relative">
+//         <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-center relative z-10">
+//           <div className="w-full max-w-4xl">
+//             <TiltedCard
+//               imageSrc="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?fit=crop&w=1200&q=80"
+//               altText="Hotel AI Transformation"
+//               captionText=""
+//               containerHeight="450px"
+//               containerWidth="100%"
+//               imageHeight="450px"
+//               imageWidth="100%"
+//               rotateAmplitude={12}
+//               scaleOnHover={1.05}
+//               showMobileWarning={false}
+//               showTooltip={false}
+//               displayOverlayContent={true}
+//               overlayContent={
+//                 <div className="relative w-full h-full flex flex-col justify-center items-center text-white pointer-events-auto">
+//                   {/* Dark overlay */}
+//                   <div className="absolute inset-0 bg-black/70 rounded-xl"></div>
+
+//                   {/* Content on top */}
+//                   <div className="relative z-10 text-center px-4">
+//                     <h2 className="text-3xl sm:text-4xl font-bold mb-4">Ready to Transform Your Hotel?</h2>
+//                     <p className="mb-6 text-sm opacity-90">
+//                       Join hundreds of hotels worldwide using Nexrova to enhance operations and guest experiences.
+//                     </p>
+//                     <div className="flex flex-col sm:flex-row justify-center gap-4">
+//                       <Button asChild size="md" className="bg-white text-black px-6 py-3 hover:bg-gray-200">
+//                         <Link to="/request-demo">Request Demo</Link>
+//                       </Button>
+//                       <Button asChild size="md" className="border border-white text-white px-6 py-3 hover:bg-white hover:text-black">
+//                         <Link to="/contact">Contact Sales</Link>
+//                       </Button>
+//                     </div>
+//                   </div>
+//                 </div>
+//               }
+//             />
+//           </div>
+//         </div>
+//       </section>
+
+//       <Footer />
+//     </div>
+//   );
+// };
+
+// export default Index;
+
 import React from 'react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
@@ -656,8 +852,8 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Link } from 'react-router-dom';
 import TiltedCard from '@/components/TiltedCard';
+import LiquidEther from '@/components/LiquidEther';
 import { ArrowRight, MessageCircle, TrendingUp, Workflow, Shield, CheckCircle } from 'lucide-react';
-
 
 const Index = () => {
   const features = [
@@ -678,18 +874,38 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      {/* Navigation stays at the top */}
       <Navigation />
 
-      {/* Hero Section */}
-      <section className="relative py-32 overflow-hidden section-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-          {/* <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-8 leading-snug text-navy">
-            AI-Powered Guest Assistance Platform <br />
-            <span className="gradient-text">Prevent Fraud, Protect Revenue</span>
-          </h1> */}
+      {/* Hero Section with LiquidEther behind content */}
+      {/* <section className="relative py-32 overflow-hidden section-white"> */}
+      <section className="relative min-h-[100vh] overflow-hidden section-white flex items-center">
+        {/* LiquidEther Background */}
+        <div className="absolute inset-0 z-0">
+          <LiquidEther
+            colors={['#5227FF', '#FF9FFC', '#B19EEF']}
+            mouseForce={8}
+            cursorSize={100}
+            isViscous={false}
+            viscous={30}
+            iterationsViscous={32}
+            iterationsPoisson={32}
+            resolution={0.5}
+            isBounce={false}
+            autoDemo={true}
+            autoSpeed={0.5}
+            autoIntensity={2.2}
+            takeoverDuration={0.25}
+            autoResumeDelay={3000}
+            autoRampDuration={0.6}
+          />
+        </div>
+
+        {/* Hero Content */}
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1
             className="animate-fade-up text-4xl sm:text-5xl lg:text-6xl font-bold mb-8 leading-snug text-navy"
-            style={{ fontFamily: "'Orbitron', sans-serif" }} // or 'Bitcount Grid Single Ink' if you have it
+            style={{ fontFamily: "'Orbitron', sans-serif" }}
           >
             AI-Powered Guest Assistance Platform <br />
             <span className="glow-gradient-text">Prevent Fraud, Protect Revenue</span>
@@ -698,14 +914,13 @@ const Index = () => {
           <p className="text-xl sm:text-2xl mb-12 leading-relaxed text-charcoal max-w-3xl mx-auto">
             AI driven platform that protects your revenue, prevents fraud across Finance, Front Desk, Kitchen, and Inventory, enhances the guest experience, and reduces operational costs by up to 35%.
           </p>
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            {/* <Button asChild size="lg" className="text-lg px-8 py-4 btn-gradient hover-glow-cyan"> */}
             <Button asChild size="lg" className="text-lg px-8 py-4 glow-btn bg-black text-white">
               <Link to="/request-demo">
                 Request Demo <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
-            {/* <Button asChild size="lg" className="text-lg px-8 py-4 btn-gold hover-glow-gold"> */}
             <Button asChild size="lg" className="text-lg px-8 py-4 glow-btn bg-black text-white">
               <Link to="/solutions">Explore Solutions</Link>
             </Button>
@@ -765,18 +980,6 @@ const Index = () => {
                 </Button>
               </div>
             </div>
-            {/* <div className="lg:pl-8">
-              <Card className="shadow-elegant overflow-hidden hover-lift transition-smooth">
-                <CardContent className="p-0">
-                  <div className="aspect-square bg-gradient-to-br from-nexrova-cyan/20 via-purple-500/10 to-nexrova-cyan/5 flex items-center justify-center">
-                    <div className="text-center">
-                      <Workflow className="h-24 w-24 text-nexrova-cyan/60 mx-auto mb-4" />
-                      <p className="text-lg font-medium text-medium-gray">AI-Powered Operations</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </div> */}
             <div className="lg:pl-8">
               <Card className="shadow-elegant overflow-hidden hover-lift transition-smooth">
                 <CardContent className="p-0">
@@ -794,7 +997,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* CTA Tilted Card Section with dark semi-visible bg */}
+      {/* CTA Tilted Card Section */}
       <section className="py-24 section-white relative">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-center relative z-10">
           <div className="w-full max-w-4xl">
@@ -813,10 +1016,7 @@ const Index = () => {
               displayOverlayContent={true}
               overlayContent={
                 <div className="relative w-full h-full flex flex-col justify-center items-center text-white pointer-events-auto">
-                  {/* Dark overlay */}
                   <div className="absolute inset-0 bg-black/70 rounded-xl"></div>
-
-                  {/* Content on top */}
                   <div className="relative z-10 text-center px-4">
                     <h2 className="text-3xl sm:text-4xl font-bold mb-4">Ready to Transform Your Hotel?</h2>
                     <p className="mb-6 text-sm opacity-90">
