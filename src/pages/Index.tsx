@@ -883,7 +883,8 @@ const Index = () => {
         {/* LiquidEther Background */}
         <div className="absolute inset-0 z-0">
           <LiquidEther
-            colors={['#5227FF', '#FF9FFC', '#B19EEF']}
+            // colors={['#5227FF', '#FF9FFC', '#B19EEF']}
+            colors={['#000000', '#00FFFF', '#0066FF']}
             mouseForce={8}
             cursorSize={100}
             isViscous={false}
