@@ -881,21 +881,20 @@ const Index = () => {
       {/* <section className="relative py-32 overflow-hidden section-white"> */}
       <section className="relative min-h-[100vh] overflow-hidden section-white flex items-center">
         {/* LiquidEther Background */}
-        <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 z-0 bg-black">
           <LiquidEther
-            // colors={['#5227FF', '#FF9FFC', '#B19EEF']}
-            colors={['#000000', '#00FFFF', '#0066FF']}
-            mouseForce={10}
-            cursorSize={100}
+            colors={['#000000', '#2b004f', '#8a2be2']} // deep black + violet-purple gradient
+            mouseForce={6} // smoother, more natural drag feel
+            cursorSize={120} // slightly larger for smoother distortion
             isViscous={false}
             viscous={30}
             iterationsViscous={32}
             iterationsPoisson={32}
-            resolution={0.5}
+            resolution={0.6}
             isBounce={false}
             autoDemo={true}
-            autoSpeed={0.5}
-            autoIntensity={2.2}
+            autoSpeed={0.4}
+            autoIntensity={2.8} // stronger glow/pulse movement
             takeoverDuration={0.25}
             autoResumeDelay={3000}
             autoRampDuration={0.6}
