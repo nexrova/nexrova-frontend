@@ -885,7 +885,7 @@ const Index = () => {
           <LiquidEther
             // colors={['#5227FF', '#FF9FFC', '#B19EEF']}
             colors={['#000000', '#00FFFF', '#0066FF']}
-            mouseForce={8}
+            mouseForce={10}
             cursorSize={100}
             isViscous={false}
             viscous={30}
