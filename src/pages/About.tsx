@@ -808,12 +808,12 @@ const About = () => {
       description: "Plug-and-play modules integrate into existing tech, or act as a custom PMS, offering flexible, low-cost adoption.",
       style: 'primary-border' 
     },
-    {
-      icon: Lock, 
-      title: "The Technical Moat",
-      description: "The unique fusion of IoT hardware, WhatsApp compliance, and AI creates switching barriers incumbents can't match quickly.",
-      style: 'gradient-fill' 
-    }
+    // {
+    //   icon: Lock, 
+    //   title: "The Technical Moat",
+    //   description: "The unique fusion of IoT hardware, WhatsApp compliance, and AI creates switching barriers incumbents can't match quickly.",
+    //   style: 'gradient-fill' 
+    // }
   ];
 
   const team = [
@@ -825,7 +825,7 @@ const About = () => {
     },
     {
       name: "Subrat Das",
-      role: "Co-founder",
+      role: "COO and Co-founder",
       bio: "Undergrad student at Sathyabama Institute of Science and Technology, Chennai.",
       image: "path/to/subrat_image.jpg"
     },
@@ -925,7 +925,7 @@ const About = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {corePillars.map((pillar, index) => (
               <CorePillarCard 
                 key={index}

@@ -852,7 +852,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Link } from 'react-router-dom';
 import TiltedCard from '@/components/TiltedCard';
-import LiquidEther from '@/components/LiquidEther';
+// import LiquidEther from '@/components/LiquidEther';
 import { ArrowRight, MessageCircle, TrendingUp, Workflow, Shield, CheckCircle } from 'lucide-react';
 
 const Index = () => {
@@ -877,31 +877,10 @@ const Index = () => {
       {/* Navigation stays at the top */}
       <Navigation />
 
-      {/* Hero Section with LiquidEther behind content */}
+      {/* Hero Section */}
       {/* <section className="relative py-32 overflow-hidden section-white"> */}
       <section className="relative min-h-[100vh] overflow-hidden section-white flex items-center">
-        {/* LiquidEther Background */}
-        <div className="absolute inset-0 z-0">
-          <LiquidEther
-            // colors={['#5227FF', '#FF9FFC', '#B19EEF']}
-            colors={['#000000', '#00FFFF', '#0066FF']}
-            mouseForce={10}
-            cursorSize={100}
-            isViscous={false}
-            viscous={30}
-            iterationsViscous={32}
-            iterationsPoisson={32}
-            resolution={0.5}
-            isBounce={false}
-            autoDemo={true}
-            autoSpeed={0.5}
-            autoIntensity={2.2}
-            takeoverDuration={0.25}
-            autoResumeDelay={3000}
-            autoRampDuration={0.6}
-          />
-        </div>
-
+      
         {/* Hero Content */}
         <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1
@@ -909,7 +888,7 @@ const Index = () => {
             style={{ fontFamily: "'Orbitron', sans-serif" }}
           >
             AI-Powered Guest Assistance Platform <br />
-            <span className="glow-gradient-text">Prevent Fraud, Protect Revenue</span>
+            <span className="text-black hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-600 hover:bg-clip-text hover:text-transparent transition-all duration-300">Prevent Fraud, Protect Revenue</span>
           </h1>
 
           <p className="text-xl sm:text-2xl mb-12 leading-relaxed text-charcoal max-w-3xl mx-auto">
