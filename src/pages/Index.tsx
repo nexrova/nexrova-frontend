@@ -896,15 +896,25 @@ const Index = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" className="text-lg px-8 py-4 glow-btn bg-black text-white">
+            <Button
+              asChild
+              size="lg"
+              className="text-lg px-8 py-4 rounded-xl font-medium bg-black text-white hover:bg-gray-700 transform hover:-translate-y-1 transition-all duration-300 shadow-md hover:shadow-lg"
+            >
               <Link to="/request-demo">
                 Request Demo <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
-            <Button asChild size="lg" className="text-lg px-8 py-4 glow-btn bg-black text-white">
+
+            <Button
+              asChild
+              size="lg"
+              className="text-lg px-8 py-4 rounded-xl font-medium bg-black text-white hover:bg-gray-700 transform hover:-translate-y-1 transition-all duration-300 shadow-md hover:shadow-lg"
+            >
               <Link to="/solutions">Explore Solutions</Link>
             </Button>
           </div>
+
         </div>
       </section>
 
